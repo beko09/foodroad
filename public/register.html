@@ -12,42 +12,83 @@
 
 <body>
   <div class="relative top-0 grid h-screen grid-cols-1 gap-4 md:grid-cols-2 md:gap-0 place-content-center login">
-    <div class="flex flex-col items-center justify-center gap-3 px-4 pt-6 md:px-24">
+    <div class="flex flex-col items-center justify-center gap-3 px-4 pt-4 ">
       <div class="flex flex-col items-center justify-center gap-2">
         <div class="">
           <a href="index.html">
             <img src="assets/images/Logo.webp" alt="logo" />
           </a>
         </div>
-        <h1 class="text-4xl font-work_Sans text-[#febd2e]">Sign In</h1>
+        <h1 class="text-4xl font-work_Sans text-[#febd2e]">Register</h1>
         <p class="text-lg text-black/50">Just sign in if you have an account in here. Enjoy our Website</p>
       </div>
       <form action="#" method="post"
-        class="flex flex-col w-full max-w-full gap-6 px-4 py-10 bg-white rounded-lg shadow-md lg:px-10">
-        <div class="relative input-reg  [&>input:invalid]:!ring-red-400">
-          <label class="absolute top-[-13px] px-1 bg-white">Your Email</label>
-          <input required class="w-full outline-none peer text-black/50" type="email" />
+        class="flex flex-col w-full max-w-full gap-6 px-4 py-8 bg-white rounded-lg shadow-md lg:px-10">
+        <div class="flex flex-col gap-6 lg:flex-row lg:justify-between">
+          <div class="relative">
+            <input type="text" id="first" class="input-form peer" placeholder=" " />
+            <label for="first" class="label-form scale-70 peer-focus:scale-70 peer-placeholder-shown:scale-100 ">First
+              Name</label>
+          </div>
+          <div class="relative">
+            <input type="text" id="last" class="input-form peer" placeholder=" " />
+            <label for="last" class="label-form scale-70 peer-focus:scale-70 peer-placeholder-shown:scale-100 ">Last
+              Name</label>
+          </div>
         </div>
-        <div class="relative input-reg [&>input:invalid]:!ring-red-400">
-          <label class="absolute top-[-13px] px-1 bg-white">Password</label>
-          <input required class="w-full outline-none text-black/50" type="password" />
+        <div class="flex flex-col gap-8 lg:flex-row lg:justify-between">
+          <div>
+            <div class="relative ">
+              <input type="number" id="number" class="input-form peer" placeholder=" " />
+              <label for="number"
+                class="label-form scale-70 peer-focus:scale-70 peer-placeholder-shown:scale-100 ">Phone number</label>
+            </div>
+          </div>
+          <div class="relative w-full">
+            <select for="country" class="input-form peer">
+              <option selected>Your country</option>
+              <option value="US">United States</option>
+              <option value="CA">Canada</option>
+              <option value="FR">France</option>
+              <option value="DE">Germany</option>
+            </select>
+          </div>
+        </div>
+        <div class="relative">
+          <input type="text" id="address" class="input-form peer" placeholder=" " />
+          <label for="address" class="label-form scale-70 peer-focus:scale-70 peer-placeholder-shown:scale-100 ">Mail
+            Address</label>
+        </div>
+        <div class="flex flex-col gap-6 lg:flex-row lg:justify-between">
+          <div class="relative">
+            <input type="password" id="pass" class="input-form peer" placeholder=" " />
+            <label for="pass" class="label-form scale-70 peer-focus:scale-70 peer-placeholder-shown:scale-100 ">
+              Password</label>
+          </div>
+          <div class="relative">
+            <input type="password" id="Confirm" class="input-form peer" placeholder=" " />
+            <label for="Confirm"
+              class="label-form scale-70 peer-focus:scale-70 peer-placeholder-shown:scale-100 ">Confirm Password</label>
+          </div>
         </div>
         <div class="flex flex-row justify-between">
           <div class="flex flex-row items-center gap-2">
             <input id="remember" type="checkbox" />
-            <label for="remember">Remember Me</label>
+            <label for="remember">I agree to Square’s
+              <a href="#" class="text-[#f0bb62]">Cookie</a>
+              and
+              <a href="#" class="text-[#f0bb62]">Privacy</a>
+              Policy.</label>
           </div>
-          <div>
-            <a class="text-[#f0bb62] textlg" href="#">Forgot Password</a>
-          </div>
+
         </div>
-        <div class=" main-btn">
-          <button class="w-full !max-w-full btn">Login </button>
+        <div class="flex flex-col items-center gap-4 lg:flex-row">
+
+          <a href="login.html"
+            class="block py-2 px-8  !text-[#696974] !bg-[#f1f1f5] rounded-full shadow-lg capitalize">login </a>
+          <button class="block w-full px-8 py-2 text-white rounded-full shadow-lg bg-primary">Get Started </button>
         </div>
       </form>
-      <div class="my-3 p-2 bg-[#f8f8ff] rounded-br-md rounded-bl-md">
-        <p>A already have an account ? <a class="text-[#f0bb62]" href="loginn.html">login</a></p>
-      </div>
     </div>
     <div class="relative hidden h-screen lg:block">
       <img class="w-full h-[inherit]" src="assets/images/register-bg.webp" alt="login" />
