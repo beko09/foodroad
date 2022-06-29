@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Road - login</title>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="relative top-0 grid h-screen grid-cols-1 gap-4 md:grid-cols-2 md:gap-0 place-content-center login">
+    <div class="flex flex-col items-center justify-center gap-3 px-4 pt-6 md:px-24">
+      <div class="flex flex-col items-center justify-center gap-2">
+        <div class="">
+           <a href="index.html">
+            <img src="assets/images/Logo.webp" alt="logo" />
+          </a>
+        </div>
+        <h1 class="text-4xl font-work_Sans text-[#febd2e]">Sign In</h1>
+        <p class="text-lg text-black/50">Just sign in if you have an account in here. Enjoy our Website</p>
+      </div>
+      <form action="#" method="post"
+        class="flex flex-col w-full max-w-full gap-6 px-4 py-10 bg-white rounded-lg shadow-md lg:px-10">
+        <div class="relative input-reg ">
+          <label class="absolute px-1 bg-white top-[-13px]">Your Email</label>
+          <input required class="w-full outline-none text-black/50" type="email" />
+        </div>
+        <div class="relative input-reg [&>input:invalid]:!ring-red-400">
+          <label class="absolute top-[-13px] px-1 bg-white">Password</label>
+          <input required class="w-full outline-none text-black/50" type="password" />
+        </div>
+        <div class="flex flex-row justify-between">
+          <div class="flex flex-row items-center gap-2">
+            <input id="remember" type="checkbox" />
+            <label for="remember">Remember Me</label>
+          </div>
+          <div>
+            <a class="text-[#f0bb62] textlg" href="#">Forgot Password</a>
+          </div>
+        </div>
+        <div class=" main-btn">
+          <button class="w-full !max-w-full btn">Login </button>
+        </div>
+      </form>
+      <div class="my-3 p-2 bg-[#f8f8ff] rounded-br-md rounded-bl-md">
+        <p>You don't have an account ? <a class="text-[#f0bb62]" href="register.html">Register</a></p>
+      </div>
+    </div>
+    <div class="relative hidden h-screen lg:block">
+      <img class="w-full h-[inherit]" src="assets/images/login-bg.webp" alt="login" />
+    </div>
+  </div>
+  <!-- js lib -->
+  <script src="js/libs/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

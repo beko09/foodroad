@@ -1,0 +1,111 @@
+html {
+  @apply accent-primary;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "open-sans";
+  src: url("../assets/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "work_Sans";
+  src: url("../assets/fonts/Work_Sans/static/WorkSans-Regular.ttf");
+}
+
+.header {
+  @apply flex flex-row justify-between  items-center px-4 lg:px-12 py-4 bg-white relative overflow-hidden lg:overflow-visible;
+}
+
+.nav-link {
+  @apply  text-black/60 hover:text-black font-open-sans text-lg capitalize
+}
+
+.menu-mobile {
+  @apply fixed lg:relative lg:translate-x-0 translate-x-0 lg:w-auto lg:h-auto  w-full h-screen bg-white z-[999] top-0
+}
+
+.hide-menu {
+  @apply  translate-x-full lg:translate-x-0 
+}
+
+.open-menu {
+  @apply  -translate-x-[16px] px-8
+}
+
+.sub-nav__link {
+  @apply font-open-sans text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2 capitalize border-b-[1px] border-gray-200 hover:!pl-6 transition-all
+}
+
+@layer components {
+  .main-btn {
+  @apply drop-shadow-[0_10px_30px_rgba(81,146,89,0.5)];
+  }
+
+  .main-btn .btn {
+  @apply bg-gradient-to-r from-primary to-[#89d292] py-3 px-8 text-white rounded-full font-open-sans text-sm capitalize max-w-[186px];
+  }
+
+}
+
+.dropdown-menu {
+ @apply py-0 px-0 hidden lg:block relative lg:absolute top-8 opacity-100 lg:opacity-0 z-[50]  text-gray-700 pt-1 shadow-xl bg-white lg:w-[180px];
+  }
+
+.hero {
+    @apply lg:h-[600px] relative 
+  }
+
+ .play-video__img {
+  @apply bg-white rounded-full shadow-lg w-[45px] h-[45px] flex justify-center items-center;
+}
+
+.hero-img {
+  @apply h-[500px] relative;
+}
+
+.order-done {
+  @apply flex flex-row gap-4 items-center bg-white rounded-full max-w-[150px] lg:max-w-[222px] w-full absolute top-6  px-2 py-1 left-0 right-0 lg:right-auto lg:-left-[100px] shadow-xl mx-auto lg:mx-0 
+}
+
+.order-done h6 {
+  @apply text-[10px] lg:text-lg
+}
+
+
+.quick-order {
+  @apply  bg-white rounded-md shadow-lg absolute -bottom-10 flex flex-row gap-3 p-2 lg:translate-x-1/2 translate-x-0 mx-auto left-0 right-0 max-w-[80%] lg:left-auto lg:right-auto lg:max-w-[300px]
+}
+
+.menu-item {
+  @apply bg-[#f8fcf8] rounded-xl p-6 flex flex-col gap-4 justify-center items-center hover:bg-primary
+          ;
+}
+
+.delicious-Foods__button--next ,
+.delicious-Foods__button--prev  {
+  @apply w-[45px] h-[45px] flex justify-center items-center bg-primary  rounded-md;
+}
+
+.delicious-food .swiper-button-disabled {
+  @apply bg-[#f8fcf8] cursor-not-allowed text-black;
+}
+
+.delicious-food .swiper-button-disabled svg {
+  @apply fill-black;
+}
+
+.food-card {
+  @apply relative mb-10 bg-white rounded-md shadow-lg
+}
+
+.input-reg {
+  @apply flex flex-row items-center gap-3 px-4 py-2 bg-white rounded-full ring-1 ring-gray-200 text-black/50 placeholder:capitalize;
+}
+
+.accordion-content {
+  transition: max-height 0.3s ease-out, padding 0.3s ease;
+}

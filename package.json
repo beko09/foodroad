@@ -1,0 +1,19 @@
+{
+  "name": "food",
+  "version": "1.0.0",
+  "description": "Food project",
+  "main": "public/index.html",
+  "scripts": {
+    "dev": "tailwindcss -i src/style.css -o public/css/style.css --watch",
+    "prod": "tailwindcss -i src/style.css -o public/css/style.css --minify",
+    "build": "postcss src/style.css -o public/css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.4"
+  }
+}
