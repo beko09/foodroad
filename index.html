@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Road</title>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- start header -->
+  <header class="header">
+    <div>
+      <a href="index.html"><img src="assets/images/Logo.webp" alt="Food" /></a>
+    </div>
+    <div class="hide-menu lg:block menu-mobile">
+      <div class="py-1 px-4 inline-flex my-4 rounded-lg text-black bg-[#d6d8d6]  lg:hidden">
+        <button class="capitalize text-start close">close</button>
+      </div>
+      <ul class="flex flex-col gap-8 pt-4 lg:pt-0 lg:flex-row lg:items-center">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="restaurant.html">Restaurant</a></li>
+        <li class="relative [&:hover>ul]:block lg:[&:hover>ul]:opacity-100">
+          <div class="flex flex-row items-center">
+            <a class="nav-link " type="button" data-dropdown-toggle="dropdown" href="#">
+              Pages
+            </a>
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+          <ul class="transition-transform duration-1000 ease-in-out rounded-lg dropdown-menu"
+            aria-labelledby="dropdown">
+            <li>
+              <a href="become-merchant.html" class="sub-nav__link ">Become Merchant</a>
+            </li>
+            <li>
+              <a href="single-restaurant.html" class="sub-nav__link ">Single Restaurant</a>
+            </li>
+            <li>
+              <a href="our-team.html" class="sub-nav__link ">Our Team</a>
+            </li>
+            <li>
+              <a href="faq.html" class="sub-nav__link "> FAQ</a>
+            </li>
+          </ul>
+        </li>
+        <li><a class="nav-link" href="service.html">Service</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="py-8 main-btn lg:hidden">
+        <a href="login.html" class="btn">login</a>
+      </div>
+    </div>
+    <div class="items-center hidden gap-8 lg:flex row">
+      <a href="!#" class="block cursor-pointer">
+        <img src="assets/images/Search Icon.webp" alt="Search" />
+      </a>
+      <div class="main-btn">
+        <a href="login.html" class="btn">login</a>
+      </div>
+    </div>
+    <button class="block w-[30px] lg:hidden open-nav">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke-width="2"
+        stroke="#000000b3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-align-right">
+        <line x1="21" y1="10" x2="7" y2="10"></line>
+        <line x1="21" y1="6" x2="3" y2="6"></line>
+        <line x1="21" y1="14" x2="3" y2="14"></line>
+        <line x1="21" y1="18" x2="7" y2="18"></line>
+      </svg>
+    </button>
+  </header>
+
+  <!-- start hero -->
+  <section class="mt-[100px] lg:mt-[150px] hero">
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-0">
+      <div class="px-4">
+        <div class="flex flex-col gap-10 lg:px-20 hero-content">
+          <h1 class="text-7xl font-work_Sans">
+            Order Your Food & Enjoy The Taste
+          </h1>
+          <p class="text-black/70 text-md font-open-sans">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          </p>
+          <div class="flex flex-row items-center gap-12">
+            <div class="main-btn">
+              <a href="#" class="btn">Order Now</a>
+            </div>
+            <a href="#" class="flex flex-row items-center gap-2 bg-white">
+              <div class="play-video__img">
+                <img src="assets/images/Play-video.webp" alt="video" />
+              </div>
+              <h4 class="capitalize text-md font-open-sans">Watch video</h4>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="hero-img">
+          <img class="h-[inherit] w-full" src="assets/images/hero.webp" alt="hero" />
+          <div class="order-done">
+            <img src="assets/images/check.webp" alt="order-done" />
+            <h6>Order Complete</h6>
+          </div>
+          <div class="quick-order">
+            <div>
+              <img src="assets/images/hero-2.webp" alt="quick-order" />
+            </div>
+            <div class="flex flex-col items-start gap-3">
+              <h1 class="text-[15px] font-work_Sans font-bold text-black">Chicken Teriyaki Sauce</h1>
+              <div class="flex flex-row gap-1">
+                <img src="assets/images/star.webp" alt="start" />
+                <img src="assets/images/star.webp" alt="start" />
+                <img src="assets/images/star.webp" alt="start" />
+              </div>
+              <bdo class="text-green-500" dir="ltr">$7.99</bdo>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- start Simple order -->
+  <section class="mt-[250px] simple-order">
+    <div class="px-4 lg:px-20">
+      <div class="grid grid-cols-1 lg:grid-cols-2 ">
+        <div class="bg-[#f8fcf8] p-4 relative w-full">
+          <div class="relative flex flex-row justify-center w-full gap-4 px-4 lg:left-0 lg:px-0 lg:absolute -top-24">
+            <img class="w-1/2 lg:w-auto" src="assets/images/phone1.webp" alt="">
+            <img class="w-1/2 lg:w-auto" src="assets/images/phone2.webp" alt="">
+          </div>
+        </div>
+        <div class="bg-[#f8fcf8] p-4 rounded-tr-lg rounded-br-lg">
+          <div class="flex flex-col gap-4 simple-order__content">
+            <h1 class="text-5xl font-work_Sans">Simple Way to Order Your Food Faster</h1>
+            <p class="text-lg text-black/50 font-open-sans">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+            <div class="flex flex-row gap-2">
+              <a href="#" class="block">
+                <img src="assets/images/google-play-bad.webp" alt="download app from google play" />
+              </a>
+              <a href="#" class="block">
+                <img src="assets/images/app-store-badge.webp" alt="download app from app store " />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- start Feature -->
+  <section class="mt-[100px] lg:mt-[250px]">
+    <div class="container px-4 pb-12 mx-auto lg:px-20">
+      <div class="text-center max-w-[500px] flex flex-col gap-4 items-center justify-center mx-auto">
+        <h1 class="text-2xl font-work_Sans">What we Feature</h1>
+        <p class="text-lg text-black/50 font-open-sans">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+        </p>
+      </div>
+    </div>
+    <div class="container px-4 mx-auto lg:px-20">
+      <div class="grid grid-cols-1 gap-16 lg:grid-cols-3">
+        <div class="flex flex-col items-center justify-center gap-4">
+          <img class="w-full max-w-[150px]" src="assets/images/feat-1.webp" alt="feature" />
+          <h2 class="text-2xl font-bold font-work_Sans">
+            The Best Courier
+          </h2>
+          <p class="text-center text-black/50">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+          </p>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-4">
+          <img class="w-full max-w-[150px]" src="assets/images/feat-2.webp" alt="feature" />
+          <h2 class="text-2xl font-bold font-work_Sans">
+            Easy to Use
+          </h2>
+          <p class="text-center text-black/50">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+          </p>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-4">
+          <img class="w-full max-w-[150px]" src="assets/images/feat-3.webp" alt="feature" />
+          <h2 class="text-2xl font-bold font-work_Sans">
+            24/7 Support
+          </h2>
+          <p class="text-center text-black/50">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- start How it Works -->
+  <section class="mt-[100px] lg:mt-[250px]">
+    <div class="container px-4 mx-auto lg:px-20">
+      <div class="grid grid-cols-1 gap-4 lg:gap-0 lg:grid-cols-2">
+        <div class="bg-[#f8fcf8] p-4 relative">
+          <img class="absolute left-0 lg:-left-16 -top-20" src="assets/images/ward.webp" alt="work" />
+          <div class="work-content">
+            <h1 class="py-10 text-3xl text-black font-work_Sans">
+              How it Works
+            </h1>
+            <div class="flex flex-col gap-12">
+              <div class="max-w-[333px]">
+                <h1 class="text-2xl">
+                  <span class="text-primary">01</span> Choose your meals
+                </h1>
+                <p class="text-black/50">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                </p>
+              </div>
+              <div class="max-w-[333px]">
+                <h1 class="text-2xl ">
+                  <span class="text-primary">02</span> Choose your meals
+                </h1>
+                <p class="text-black/50">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                </p>
+              </div>
+              <div class="max-w-[333px]">
+                <h1 class="text-2xl ">
+                  <span class="text-primary">03</span> Choose your meals
+                </h1>
+                <p class="text-black/50">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative w-fulll ">
+          <img class="max-h-[600px]" src="assets/images/work.webp" alt="work" />
+          <div class="order-done !left-auto right-10">
+            <img src="assets/images/check.webp" alt="order-done" />
+            <h6>Order Complete</h6>
+          </div>
+          <div class="quick-order lg:!translate-x-[30%]">
+            <div class="flex flex-col gap-3 items-start max-w-[300px]">
+              <h1 class="text-[15px] font-work_Sans font-bold text-black">
+                <span class="text-[#FEBD2E] text-3xl font-bold">800K+</span>
+                Total Downloads
+              </h1>
+              <p class="text-black/50">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- start Our Menus -->
+  <section class="mt-[100px] lg:mt-[250px]">
+    <div class="container px-4 mx-auto lg:px-20">
+      <div class="text-center">
+        <h1 class="py-8 text-4xl font-work_Sans">
+          Our Menus
+        </h1>
+      </div>
+      <div class="grid grid-cols-2 gap-4 pt-4 lg:gap-2 lg:grid-cols-6 place-items-center">
+        <a href="#" class="transition-all duration-200 menu-item group">
+          <div class="menu-img w-[60px] h-[60px] bg-white rounded-full flex justify-center">
+            <img class="p-2" src="assets/images/Pizza.webp" alt="pizza" />
+          </div>
+          <div class="relative flex flex-row items-center gap-2">
+            <h4 class="text-md font-work_Sans group-hover:text-white">
+              Pizza
+            </h4>
+            <img class="hidden group-hover:block w-[10px]" src="assets/images/Arrow.webp" alt="" />
+          </div>
+        </a>
+        <a href="#" class="transition-all duration-200 menu-item group">
+          <div class="menu-img w-[60px] h-[60px] bg-white rounded-full flex justify-center">
+            <img class="p-2" src="assets/images/Asian.webp" alt="pizza" />
+          </div>
+          <div class="relative flex flex-row items-center gap-2">
+            <h4 class="text-md font-work_Sans group-hover:text-white">
+              Asian
+            </h4>
+            <img class="hidden group-hover:block w-[10px]" src="assets/images/Arrow.webp" alt="" />
+          </div>
+        </a>
+        <a href="#" class="transition-all duration-200 menu-item group">
+          <div class="menu-img w-[60px] h-[60px] bg-white rounded-full flex justify-center">
+            <img class="p-2" src="assets/images/Burger.webp" alt="pizza" />
+          </div>
+          <div class="relative flex flex-row items-center gap-2">
+            <h4 class="text-md font-work_Sans group-hover:text-white">
+              Burger
+            </h4>
+            <img class="hidden group-hover:block w-[10px]" src="assets/images/Arrow.webp" alt="" />
+          </div>
+        </a>
+        <a href="#" class="transition-all duration-200 menu-item group">
+          <div class="menu-img w-[60px] h-[60px] bg-white rounded-full flex justify-center">
+            <img class="p-2" src="assets/images/Juices.webp" alt="pizza" />
+          </div>
+          <div class="relative flex flex-row items-center gap-2">
+            <h4 class="text-md font-work_Sans group-hover:text-white">
+              Juices
+            </h4>
+            <img class="hidden group-hover:block w-[10px]" src="assets/images/Arrow.webp" alt="" />
+          </div>
+        </a>
+        <a href="#" class="transition-all duration-200 menu-item group">
+          <div class="menu-img w-[60px] h-[60px] bg-white rounded-full flex justify-center">
+            <img class="p-2" src="assets/images/Salad.webp" alt="pizza" />
+          </div>
+          <div class="relative flex flex-row items-center gap-2">
+            <h4 class="text-md font-work_Sans group-hover:text-white">
+              Salad
+            </h4>
+            <img class="hidden group-hover:block w-[10px]" src="assets/images/Arrow.webp" alt="" />
+          </div>
+        </a>
+        <a href="#" class="transition-all duration-200 menu-item group">
+          <div class="menu-img w-[60px] h-[60px] bg-white rounded-full flex justify-center">
+            <img class="p-2" src="assets/images/Bakery.webp" alt="pizza" />
+          </div>
+          <div class="relative flex flex-row items-center gap-2">
+            <h4 class="text-md font-work_Sans group-hover:text-white">
+              Bakery
+            </h4>
+            <img class="hidden group-hover:block w-[10px]" src="assets/images/Arrow.webp" alt="" />
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- start Delicious Foods  -->
+  <section class="mt-[100px] lg:mt-[250px] delicious-food">
+    <div class="container px-4 mx-auto lg:px-20">
+      <div class="flex flex-row items-center justify-between">
+        <div>
+          <h1 class="text-2xl font-work_Sans">
+            Delicious Food For You
+          </h1>
+        </div>
+        <div class="relative flex flex-row items-center justify-end gap-3">
+          <div class="delicious-Foods__button--next">
+            <svg fill="#fff" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+              clip-rule="evenodd">
+              <path d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z" /></svg>
+          </div>
+          <div class="delicious-Foods__button--prev">
+            <svg fill="#fff" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+              clip-rule="evenodd">
+              <path d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z" /></svg>
+          </div>
+        </div>
+      </div>
+      <div class="pt-10">
+        <div class="swiper delicious-Foods">
+          <div class="swiper-wrapper ">
+            <!-- item 1 -->
+            <div class="swiper-slide">
+              <div class="food-card">
+                <div class="max-h-[300px] relative overflow-hidden">
+                  <img class="w-full h-auto" src="assets/images/food-1.webp" alt="food" />
+                </div>
+                <div class="flex flex-col gap-8 p-8 food-card__content">
+                  <div class="flex flex-row items-center justify-between">
+                    <div class="flex flex-row gap-1">
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                    </div>
+                    <div>
+                      <span class="text-black/50">(5.0)</span>
+                    </div>
+                  </div>
+                  <h1 class="text-2xl">Grilled salmon fillet</h1>
+                  <p class="text-black/50">Consetetur sadipscing elitr, sed . . . .</p>
+                  <div class="flex flex-row items-center justify-between">
+                    <div>
+                      <bdo class="font-bold text-black" dir="ltr">$10.99</bdo>
+                    </div>
+                    <div class="main-btn">
+                      <button class="btn">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div class="swiper-slide">
+              <div class=" food-card">
+                <div class="max-h-[300px] relative overflow-hidden">
+                  <img class="w-full h-auto" src="assets/images/food-2.webp" alt="food" />
+                </div>
+                <div class="flex flex-col gap-8 p-8 food-card__content">
+                  <div class="flex flex-row items-center justify-between">
+                    <div class="flex flex-row gap-1">
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                    </div>
+                    <div>
+                      <span class="text-black/50">(5.0)</span>
+                    </div>
+                  </div>
+                  <h1 class="text-2xl">Chicken Teriyaki Sauce</h1>
+                  <p class="text-black/50">Consetetur sadipscing elitr, sed . . . .</p>
+                  <div class="flex flex-row items-center justify-between">
+                    <div>
+                      <bdo class="font-bold text-black" dir="ltr">$10.99</bdo>
+                    </div>
+                    <div class="main-btn">
+                      <button class="btn">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item 3 -->
+            <div class="swiper-slide">
+              <div class=" food-card">
+                <div class="max-h-[300px] relative overflow-hidden">
+                  <img class="w-full h-auto" src="assets/images/food-3.webp" alt="food" />
+                </div>
+                <div class="flex flex-col gap-8 p-8 food-card__content">
+                  <div class="flex flex-row items-center justify-between">
+                    <div class="flex flex-row gap-1">
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                    </div>
+                    <div>
+                      <span class="text-black/50">(5.0)</span>
+                    </div>
+                  </div>
+                  <h1 class="text-2xl">Cheese Stuffed Burgers</h1>
+                  <p class="text-black/50">Consetetur sadipscing elitr, sed . . . .</p>
+                  <div class="flex flex-row items-center justify-between">
+                    <div>
+                      <bdo class="font-bold text-black" dir="ltr">$10.99</bdo>
+                    </div>
+                    <div class="main-btn">
+                      <button class="btn">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item 4 -->
+            <div class="swiper-slide">
+              <div class=" food-card">
+                <div class="max-h-[300px] relative overflow-hidden">
+                  <img class="w-full h-auto" src="assets/images/food-4.webp" alt="food" />
+                </div>
+                <div class="flex flex-col gap-8 p-8 food-card__content">
+                  <div class="flex flex-row items-center justify-between">
+                    <div class="flex flex-row gap-1">
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                    </div>
+                    <div>
+                      <span class="text-black/50">(5.0)</span>
+                    </div>
+                  </div>
+                  <h1 class="text-2xl">Seafood Salad</h1>
+                  <p class="text-black/50">Consetetur sadipscing elitr, sed . . . .</p>
+                  <div class="flex flex-row items-center justify-between">
+                    <div>
+                      <bdo class="font-bold text-black" dir="ltr">$10.99</bdo>
+                    </div>
+                    <div class="main-btn">
+                      <button class="btn">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item 5 -->
+            <div class="swiper-slide">
+              <div class=" food-card">
+                <div class="max-h-[300px] relative overflow-hidden">
+                  <img class="w-full h-auto" src="assets/images/food-5.webp" alt="food" />
+                </div>
+                <div class="flex flex-col gap-8 p-8 food-card__content">
+                  <div class="flex flex-row items-center justify-between">
+                    <div class="flex flex-row gap-1">
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                    </div>
+                    <div>
+                      <span class="text-black/50">(5.0)</span>
+                    </div>
+                  </div>
+                  <h1 class="text-2xl">Seafood Salad</h1>
+                  <p class="text-black/50">Consetetur sadipscing elitr, sed . . . .</p>
+                  <div class="flex flex-row items-center justify-between">
+                    <div>
+                      <bdo class="font-bold text-black" dir="ltr">$10.99</bdo>
+                    </div>
+                    <div class="main-btn">
+                      <button class="btn">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item 6 -->
+            <div class="swiper-slide">
+              <div class=" food-card">
+                <div class="max-h-[300px] relative overflow-hidden">
+                  <img class="w-full h-auto" src="assets/images/food-6.webp" alt="food" />
+                </div>
+                <div class="flex flex-col gap-8 p-8 food-card__content">
+                  <div class="flex flex-row items-center justify-between">
+                    <div class="flex flex-row gap-1">
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                    </div>
+                    <div>
+                      <span class="text-black/50">(5.0)</span>
+                    </div>
+                  </div>
+                  <h1 class="text-2xl">Baked Mushrooms</h1>
+                  <p class="text-black/50">Consetetur sadipscing elitr, sed . . . .</p>
+                  <div class="flex flex-row items-center justify-between">
+                    <div>
+                      <bdo class="font-bold text-black" dir="ltr">$10.99</bdo>
+                    </div>
+                    <div class="main-btn">
+                      <button class="btn">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item 7 -->
+            <div class="swiper-slide">
+              <div class=" food-card">
+                <div class="max-h-[300px] relative overflow-hidden">
+                  <img class="w-full h-auto" src="assets/images/food-1.webp" alt="food" />
+                </div>
+                <div class="flex flex-col gap-8 p-8 food-card__content">
+                  <div class="flex flex-row items-center justify-between">
+                    <div class="flex flex-row gap-1">
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                    </div>
+                    <div>
+                      <span class="text-black/50">(5.0)</span>
+                    </div>
+                  </div>
+                  <h1 class="text-2xl">Grilled salmon fillet</h1>
+                  <p class="text-black/50">Consetetur sadipscing elitr, sed . . . .</p>
+                  <div class="flex flex-row items-center justify-between">
+                    <div>
+                      <bdo class="font-bold text-black" dir="ltr">$10.99</bdo>
+                    </div>
+                    <div class="main-btn">
+                      <button class="btn">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item 8 -->
+            <div class="swiper-slide">
+              <div class=" food-card">
+                <div class="max-h-[300px] relative overflow-hidden">
+                  <img class="w-full h-auto" src="assets/images/food-2.webp" alt="food" />
+                </div>
+                <div class="flex flex-col gap-8 p-8 food-card__content">
+                  <div class="flex flex-row items-center justify-between">
+                    <div class="flex flex-row gap-1">
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                    </div>
+                    <div>
+                      <span class="text-black/50">(5.0)</span>
+                    </div>
+                  </div>
+                  <h1 class="text-2xl">Chicken Teriyaki Sauce</h1>
+                  <p class="text-black/50">Consetetur sadipscing elitr, sed . . . .</p>
+                  <div class="flex flex-row items-center justify-between">
+                    <div>
+                      <bdo class="font-bold text-black" dir="ltr">$10.99</bdo>
+                    </div>
+                    <div class="main-btn">
+                      <button class="btn">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- start Customers Say -->
+  <section class="mt-[100px] lg:mt-[250px]">
+    <div class="container px-4 mx-auto lg:px-20">
+      <div class="grid grid-cols-1 gap-4 lg:gap-0 lg:grid-cols-2">
+        <div class="max-h-[400px] p-3 relative overflow-hidden flex justify-center order-2 lg:order-1">
+          <img class="h-full" src="assets/images/Coffee-break.webp" alt="coffee" />
+        </div>
+        <div class="relative order-1 p-4 lg:p-12 lg:order-2">
+          <img class="absolute right-0 lg:-right-16 -top-20" src="assets/images/ward.webp" alt="work" />
+          <h1 class="pb-8 text-5xl font-work_Sans">What Customers Say About us</h1>
+          <div>
+            <div class="swiper customers-say">
+              <div class="swiper-wrapper ">
+                <!-- item 1 -->
+                <div class="swiper-slide">
+                  <div class="flex flex-col gap-8 customers-card">
+                    <p class="text-lg text-black/50">
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                      labore et dolore magna aliquyam erat, sed diam voluptua.
+                    </p>
+                    <div class="flex flex-row items-center gap-3">
+                      <div class="w-[60px] h-[60px] rounded-full relative overflow-hidden">
+                        <img src="assets/images/user.webp" alt="user" />
+                      </div>
+                      <div class="flex flex-col gap-2">
+                        <h1 class="text-2xl font-bold font-work_Sans">Mohamed Mustafa</h1>
+                        <p class="text-black/50">Food Lovers</p>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex flex-row items-center w-auto gap-2">
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <span class="text-black/50">(5.0)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- item 2 -->
+                <div class="swiper-slide">
+                  <div class="flex flex-col gap-8 customers-card">
+                    <p class="text-lg text-black/50">
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                      labore et dolore magna aliquyam erat, sed diam voluptua.
+                    </p>
+                    <div class="flex flex-row items-center gap-3">
+                      <div class="w-[60px] h-[60px] rounded-full relative overflow-hidden">
+                        <img src="assets/images/user.webp" alt="user" />
+                      </div>
+                      <div class="flex flex-col gap-2">
+                        <h1 class="text-2xl font-bold font-work_Sans">Abobaker Hilal</h1>
+                        <p class="text-black/50">Food Lovers</p>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex flex-row items-center w-auto gap-2">
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <span class="text-black/50">(5.0)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- item 3 -->
+                <div class="swiper-slide">
+                  <div class="flex flex-col gap-8 customers-card">
+                    <p class="text-lg text-black/50">
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                      labore et dolore magna aliquyam erat, sed diam voluptua.
+                    </p>
+                    <div class="flex flex-row items-center gap-3">
+                      <div class="w-[60px] h-[60px] rounded-full relative overflow-hidden">
+                        <img src="assets/images/user.webp" alt="user" />
+                      </div>
+                      <div class="flex flex-col gap-2">
+                        <h1 class="text-2xl font-bold font-work_Sans">Test Name</h1>
+                        <p class="text-black/50">Food Lovers</p>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex flex-row items-center w-auto gap-2">
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <span class="text-black/50">(5.0)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- start Register Now -->
+  <section class="mt-[100px] lg:mt-[250px]">
+    <div class="container px-4 mx-auto lg:px-20">
+      <div class="grid grid-cols-1 gap-4 lg:gap-0 lg:grid-cols-2 place-content-center">
+        <div>
+          <h1 class="text-5xl font-work_Sans">Express food ordering with delivery</h1>
+          <div class="form-register">
+            <form action="#" method="post" class="flex flex-col gap-6 pt-10 w-full max-w-full lg:max-w-[300px]">
+              <div class="input-reg">
+                <img class="w-[15px]" src="assets/images/user-i.webp" alt="user" />
+                <input class="w-full outline-none text-black/50" type="text" placeholder="Your Name" />
+              </div>
+              <div class="input-reg">
+                <img class="w-[15px]" src="assets/images/map-i.webp" alt="user" />
+                <input class="w-full outline-none text-black/50" type="text" placeholder="Your Address" />
+              </div>
+              <div class="input-reg">
+                <img class="w-[15px]" src="assets/images/mail-i.webp" alt="user" />
+                <input class="w-full outline-none text-black/50" type="text" placeholder="Email Address" />
+              </div>
+              <div class="input-reg">
+                <img class="w-[15px]" src="assets/images/phone-i.webp" alt="user" />
+                <input class="w-full outline-none text-black/50" type="text" placeholder="Phone Number" />
+              </div>
+              <div class="main-btn">
+                <a href="register.html" class="btn">Register Now</a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="hidden lg:block max-h-[400px] relative overflow-hidden">
+          <img class="h-full" src="assets/images/food-deliver.webp" alt="food" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- start Join Partnership? -->
+  <section class="mt-[100px] lg:mt-[250px]">
+    <div class="container px-4 mx-auto lg:px-20">
+      <div class="relative text-center">
+        <h1 class="text-3xl font-work_Sans">
+          Want to Join Partnership?
+        </h1>
+        <img class="absolute left-0 -top-20" src="assets/images/ward.webp" alt="work" />
+      </div>
+      <div class="grid grid-cols-1 gap-8 pt-12 lg:grid-cols-2">
+        <div class="bg-[#f8fcf8] p-4 lg:p-8 flex flex-col gap-10 rounded-md">
+          <div class="max-h-[300px] relative overflow-hidden rounded-xl">
+            <img class="w-full h-full" src="assets/images/join-1.webp" alt="coffee" />
+          </div>
+          <div class="flex flex-row justify-between">
+            <div>
+              <h1 class="text-sm lg:text-3xl font-work_Sans">Join Courier</h1>
+            </div>
+            <div class="main-btn">
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-[#f8fcf8] p-4 lg:p-8 flex flex-col gap-10 rounded-md">
+          <div class="max-h-[300px] relative overflow-hidden rounded-xl">
+            <img class="w-full h-full" src="assets/images/join-2.webp" alt="coffee" />
+          </div>
+          <div class="flex flex-row justify-between">
+            <div>
+              <h1 class="text-sm lg:text-3xl font-work_Sans">Join Merchant</h1>
+            </div>
+            <div class="main-btn">
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- start Articles For Food Lovers! -->
+  <section class="mt-[100px] lg:mt-[250px]">
+    <div class="container px-4 mx-auto lg:px-20">
+      <div class="text-center">
+        <h1 class="text-3xl font-work_Sans">
+          Articles For Food Lovers!
+        </h1>
+      </div>
+      <div class="grid grid-cols-1 gap-8 pt-12 lg:grid-cols-3">
+        <div class="food-card">
+          <div class="max-h-[300px] relative overflow-hidden">
+            <img class="w-full h-auto" src="assets/images/food-v-1.webp" alt="food" />
+            <div class="absolute flex flex-row items-center gap-3 p-2 bg-white rounded-full top-4 left-4">
+              <img src="assets/images/calendar.webp" alt="clander" />
+              <p class="text-md font-work_Sans">23 April 2021</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-8 p-8 food-card__content">
+
+            <h1 class="text-2xl">Grilled salmon fillet</h1>
+            <p class="text-black/50">Consetetur sadipscing elitr, sed . . . .</p>
+            <div class="main-btn">
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="food-card">
+          <div class="max-h-[300px] relative overflow-hidden">
+            <img class="w-full h-auto" src="assets/images/food-v-2.webp" alt="food" />
+            <div class="absolute flex flex-row items-center gap-3 p-2 bg-white rounded-full top-4 left-4">
+              <img src="assets/images/calendar.webp" alt="clander" />
+              <p class="text-md font-work_Sans">23 April 2021</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-8 p-8 food-card__content">
+
+            <h1 class="text-2xl">Grilled salmon fillet</h1>
+            <p class="text-black/50">Consetetur sadipscing elitr, sed . . . .</p>
+            <div class="main-btn">
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="food-card">
+          <div class="max-h-[300px] relative overflow-hidden">
+            <img class="w-full h-auto" src="assets/images/food-v-3.webp" alt="food" />
+            <div class="absolute flex flex-row items-center gap-3 p-2 bg-white rounded-full top-4 left-4">
+              <img src="assets/images/calendar.webp" alt="clander" />
+              <p class="text-md font-work_Sans">23 April 2021</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-8 p-8 food-card__content">
+
+            <h1 class="text-2xl">Grilled salmon fillet</h1>
+            <p class="text-black/50">Consetetur sadipscing elitr, sed . . . .</p>
+            <div class="main-btn">
+              <a href="#" class="btn">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- start Footer -->
+  <footer class="mt-[100px] lg:mt-[250px] pb-4">
+    <div class="container px-4 mx-auto lg:px-20">
+      <div class="relative">
+        <a href="index.html" class="block"><img src="assets/images/Logo.webp" alt="logo" /></a>
+        <img class="absolute right-0 -top-20" src="assets/images/ward.webp" alt="work" />
+      </div>
+      <div class="grid grid-cols-2 gap-8 py-12 lg:gap-4 lg:grid-cols-4">
+        <div>
+          <h1 class="text-xl capitalize">
+            Why us?
+          </h1>
+          <ul class="flex flex-col gap-3 pt-6">
+            <li><a href="#" class="nav-link">Responsive</a></li>
+            <li><a href="#" class="nav-link">Engagement</a></li>
+            <li><a href="#" class="nav-link">Scale</a></li>
+            <li><a href="#" class="nav-link">Watch the Demo</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="text-xl capitalize">
+            Resources
+          </h1>
+          <ul class="flex flex-col gap-3 pt-6">
+            <li><a href="#" class="nav-link">Developers</a></li>
+            <li><a href="#" class="nav-link">Apps</a></li>
+            <li><a href="#" class="nav-link">Blog</a></li>
+            <li><a href="#" class="nav-link">Help Center</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="text-xl capitalize">
+            Company
+          </h1>
+          <ul class="flex flex-col gap-3 pt-6">
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Merchant</a></li>
+            <li><a href="#" class="nav-link">Career</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="text-xl capitalize">
+            Our Social Media
+          </h1>
+          <div class="flex flex-col gap-4 pt-4">
+            <div class="flex flex-row gap-4">
+              <div class="w-[20px] h-[20px] rounded-md bg-primary p-1">
+                <img src="assets/images/facebook.webp" alt="face" />
+              </div>
+              <div class="w-[20px] h-[20px] rounded-md bg-primary p-1">
+                <img src="assets/images/instagram.webp" alt="face" />
+              </div>
+              <div class="w-[20px] h-[20px] rounded-md bg-primary p-1">
+                <img src="assets/images/twitter.webp" alt="face" />
+              </div>
+            </div>
+            <div>
+              <h class="text-xl font-work_Sans">
+                Download App
+              </h>
+              <div class="flex flex-row gap-2 pt-4">
+                <a href="#" class="block">
+                  <img src="assets/images/google-play-bad.webp" alt="download app from google play" />
+                </a>
+                <a href="#" class="block">
+                  <img src="assets/images/app-store-badge.webp" alt="download app from app store " />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="flex flex-col justify-between gap-4 py-6 lg:gap-0 lg:flex-row">
+        <div class="order-2 lg:order-1">
+          <p class="text-black/50"> Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script> FoodRoad Food delivery </p>
+        </div>
+        <div class="order-1 lg:order-2">
+          <ul class="flex flex-row gap-4">
+            <li><a href="#" class="!text-sm nav-link">Privacy Policy</a></li>
+            <li><a href="#" class="!text-sm nav-link">Cookie Policy</a></li>
+            <li><a href="#" class="!text-sm nav-link">Term & Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- js lib -->
+  <script src="js/libs/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
