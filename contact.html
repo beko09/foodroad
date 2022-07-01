@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Road - Contact</title>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+ <!-- start header -->
+  <header class="header !bg-secondary [&>*]:bg-secondary">
+    <div>
+      <a href="index.html"><img src="assets/images/Logo.webp" alt="Food" /></a>
+    </div>
+    <div class="hide-menu lg:block menu-mobile">
+      <div class="py-1 px-4 inline-flex my-4 rounded-lg text-black bg-[#d6d8d6]  lg:hidden">
+        <button class="capitalize text-start close">close</button>
+      </div>
+      <ul class="flex flex-col gap-8 pt-4 lg:pt-0 lg:flex-row lg:items-center">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="restaurant.html">Restaurant</a></li>
+        <li class="relative [&:hover>ul]:block lg:[&:hover>ul]:opacity-100">
+          <div class="flex flex-row items-center">
+            <a class="nav-link " type="button" data-dropdown-toggle="dropdown" href="#">
+              Pages
+            </a>
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+          <ul class="transition-transform duration-1000 ease-in-out rounded-lg dropdown-menu"
+            aria-labelledby="dropdown">
+            <li>
+              <a href="become-merchant.html" class="sub-nav__link ">Become Merchant</a>
+            </li>
+            <li>
+              <a href="single-restaurant.html" class="sub-nav__link ">Single Restaurant</a>
+            </li>
+            <li>
+              <a href="our-team.html" class="sub-nav__link ">Our Team</a>
+            </li>
+            <li>
+              <a href="faq.html" class="sub-nav__link "> FAQ</a>
+            </li>
+          </ul>
+        </li>
+        <li><a class="nav-link" href="service.html">Service</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="py-8 main-btn lg:hidden">
+        <a href="login.html" class="btn">login</a>
+      </div>
+    </div>
+    <div class="items-center hidden gap-8 lg:flex row">
+      <a href="!#" class="block cursor-pointer">
+        <img src="assets/images/Search Icon.webp" alt="Search" />
+      </a>
+      <div class="main-btn">
+        <a href="login.html" class="btn">login</a>
+      </div>
+    </div>
+    <button class="block w-[30px] lg:hidden open-nav">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke-width="2"
+        stroke="#000000b3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-align-right">
+        <line x1="21" y1="10" x2="7" y2="10"></line>
+        <line x1="21" y1="6" x2="3" y2="6"></line>
+        <line x1="21" y1="14" x2="3" y2="14"></line>
+        <line x1="21" y1="18" x2="7" y2="18"></line>
+      </svg>
+    </button>
+  </header>
+
+  <!-- start intro-contact -->
+  <section class="bg-secondary pt-[50px] ">
+    <div class="container px-4 mx-auto lg:px-20">
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="flex flex-col items-start justify-center gap-16 lg:gap-8">
+          <h1 class="capitalize text-3xl lg:text-[78px] font-work_Sans ">
+            Contact Us
+          </h1>
+          <p class="text-lg text-black/50">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna.
+          </p>
+        </div>
+        <div>
+          <img src="assets/images/contact-intro.webp" alt="intro" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- start Send us a Message -->
+  <section class="mt-[100px] lg:mt-[200px]">
+    <div class="container px-4 mx-auto lg:px-20">
+        <div class="flex flex-col items-center justify-center p-4 bg-secondary rounded-xl">
+          <h1 class="py-4 text-xl lg:text-4xl font-work_Sans">
+            Send us a Message
+          </h1>
+           <form  action="#" method="post"
+        class="flex flex-col w-full gap-6 px-4 py-8 my-12  lg:px-10 lg:max-w-[50%]">
+               <div class="flex flex-col gap-6 lg:flex-row lg:justify-between">
+                  <div class="relative">
+                    <input type="text" id="first" class="!bg-white input-form peer" placeholder=" " />
+                    <label for="first" class="label-form scale-70 peer-focus:scale-70 peer-placeholder-shown:scale-100 ">Your
+                      Name</label>
+                  </div>
+                  <div class="relative">
+                    <input type="email" id="last" class="!bg-white input-form peer" placeholder=" " />
+                    <label for="last" class="label-form scale-70 peer-focus:scale-70 peer-placeholder-shown:scale-100 ">Your
+                      Email</label>
+                  </div>
+               </div>
+               <div class="flex flex-col gap-6 lg:flex-row lg:justify-between">
+                  <div class="relative">
+                    <input type="tel" id="phone" class="!bg-white input-form peer" placeholder=" " />
+                    <label for="phone" class="label-form scale-70 peer-focus:scale-70 peer-placeholder-shown:scale-100 ">Your
+                      Phone</label>
+                  </div>
+                  <div class="relative">
+                    <input type="text" id="Subject" class="!bg-white input-form peer" placeholder=" " />
+                    <label for="Subject" class="label-form scale-70 peer-focus:scale-70 peer-placeholder-shown:scale-100 ">Your
+                      Subject</label>
+                  </div>
+               </div>
+              <div class="relative">
+                <textarea col="20" id="Questions" class="!rounded-xl input-form peer !bg-white"
+                  placeholder=" "></textarea>
+                <label for="Questions" class="label-form scale-70 peer-focus:scale-70 peer-placeholder-shown:scale-100 ">
+                  Your Questions
+                </label>
+              </div>
+              <div class=" main-btn">
+                <button class="w-full !max-w-full btn">Send Now </button>
+              </div>
+          </form>
+        </div>
+    </div>
+  </section>
+
+   <!-- start Office Address -->
+  <section class="mt-[100px] lg:mt-[250px]">
+    <div class="container px-4 mx-auto lg:px-20">
+      <div class="grid grid-cols-1 gap-4 lg:gap-0 lg:grid-cols-2">
+        <div class="max-h-[400px]  relative overflow-hidden flex justify-center order-2 lg:order-1">
+          <img class="h-full" src="assets/images/Directions-contact.webp" alt="coffee" />
+        </div>
+        <div class="relative order-1 p-4 lg:p-12 lg:order-2">
+          <h1 class="pb-8 text-5xl font-work_Sans">Office Address</h1>
+          <div class="flex flex-col gap-4">
+            <div class="flex flex-row items-center gap-3 border-b-[1px] border-gray-200 py-6">
+              <div class="w-[30px] h-[30px] rounded-full flex items-center bg-primary justify-center">
+                <img class="w-[15px]" src="assets/images/map-contact.webp" alt="map"/>
+              </div>
+              <div>
+                <h1>2118 Thornridge Cir. Syracuse, Connecticut 35624</h1>
+              </div>
+            </div>
+            <div class="flex flex-row items-center gap-3 border-b-[1px] border-gray-200 py-6">
+              <div class="w-[30px] h-[30px] rounded-full flex items-center bg-primary justify-center">
+                <img class="w-[15px]" src="assets/images/phone-faq.svg" alt="map"/>
+              </div>
+              <div>
+                <a href="tel:(316) 555-0116">(316) 555-0116</a>
+              </div>
+            </div>
+            <div class="flex flex-row items-center gap-3 border-b-[1px] border-gray-200 py-6">
+              <div class="w-[30px] h-[30px] rounded-full flex items-center bg-primary justify-center">
+                <img class="w-[15px]" src="assets/images/mail-contact.webp" alt="map"/>
+              </div>
+              <div>
+                <a href=""mailto:info@example.com>info@example.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- start map -->
+  <section class="mt-[100px] lg:mt-[200px]">
+    <div class="container px-4 mx-auto lg:px-20">
+        <div class="flex flex-col items-center justify-center bg-white ">
+         <iframe class="rounded-xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246059.6801636051!2d32.71268661027286!3d15.501500992694938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x168e8fde9837cabf%3A0x191f55de7e67db40!2z2KfZhNiu2LHYt9mI2YXYjCDYp9mE2LPZiNiv2KfZhg!5e0!3m2!1sar!2s!4v1656681730330!5m2!1sar!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+  </section>
+
+  <!-- start Footer -->
+  <footer class="mt-[100px] lg:mt-[250px] pb-4">
+    <div class="container px-4 mx-auto lg:px-20">
+      <div class="relative">
+        <a href="index.html" class="block"><img src="assets/images/Logo.webp" alt="logo" /></a>
+        <img class="absolute right-0 -top-20" src="assets/images/ward.webp" alt="work" />
+      </div>
+      <div class="grid grid-cols-2 gap-8 py-12 lg:gap-4 lg:grid-cols-4">
+        <div>
+          <h1 class="text-xl capitalize">
+            Why us?
+          </h1>
+          <ul class="flex flex-col gap-3 pt-6">
+            <li><a href="#" class="nav-link">Responsive</a></li>
+            <li><a href="#" class="nav-link">Engagement</a></li>
+            <li><a href="#" class="nav-link">Scale</a></li>
+            <li><a href="#" class="nav-link">Watch the Demo</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="text-xl capitalize">
+            Resources
+          </h1>
+          <ul class="flex flex-col gap-3 pt-6">
+            <li><a href="#" class="nav-link">Developers</a></li>
+            <li><a href="#" class="nav-link">Apps</a></li>
+            <li><a href="#" class="nav-link">Blog</a></li>
+            <li><a href="#" class="nav-link">Help Center</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="text-xl capitalize">
+            Company
+          </h1>
+          <ul class="flex flex-col gap-3 pt-6">
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Merchant</a></li>
+            <li><a href="#" class="nav-link">Career</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="text-xl capitalize">
+            Our Social Media
+          </h1>
+          <div class="flex flex-col gap-4 pt-4">
+            <div class="flex flex-row gap-4">
+              <div class="w-[20px] h-[20px] rounded-md bg-primary p-1">
+                <img src="assets/images/facebook.webp" alt="face" />
+              </div>
+              <div class="w-[20px] h-[20px] rounded-md bg-primary p-1">
+                <img src="assets/images/instagram.webp" alt="face" />
+              </div>
+              <div class="w-[20px] h-[20px] rounded-md bg-primary p-1">
+                <img src="assets/images/twitter.webp" alt="face" />
+              </div>
+            </div>
+            <div>
+              <h class="text-xl font-work_Sans">
+                Download App
+              </h>
+              <div class="flex flex-row gap-2 pt-4">
+                <a href="#" class="block">
+                  <img src="assets/images/google-play-bad.webp" alt="download app from google play" />
+                </a>
+                <a href="#" class="block">
+                  <img src="assets/images/app-store-badge.webp" alt="download app from app store " />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="flex flex-col justify-between gap-4 py-6 lg:gap-0 lg:flex-row">
+        <div class="order-2 lg:order-1">
+          <p class="text-black/50"> Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script> FoodRoad Food delivery </p>
+        </div>
+        <div class="order-1 lg:order-2">
+          <ul class="flex flex-row gap-4">
+            <li><a href="#" class="!text-sm nav-link">Privacy Policy</a></li>
+            <li><a href="#" class="!text-sm nav-link">Cookie Policy</a></li>
+            <li><a href="#" class="!text-sm nav-link">Term & Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- js lib -->
+  <script src="js/libs/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Food Road - service</title>
+  <title>Food Road - faq</title>
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <!-- start header -->
-  <header class="header !bg-secondary [&>*]:bg-secondary">
+ <!-- start header -->
+  <header class="header">
     <div>
       <a href="index.html"><img src="assets/images/Logo.webp" alt="Food" /></a>
     </div>
@@ -76,219 +76,80 @@
     </button>
   </header>
 
-  <!-- start intro-service -->
-  <section class="service bg-secondary pt-[50px] lg:pt-0">
-    <div class="container px-4 mx-auto lg:px-20">
-      <div class="grid grid-cols-1 lg:grid-cols-2">
-        <div class="flex flex-col items-start justify-center gap-16 lg:gap-8">
-          <h1 class="text-3xl lg:text-[78px] font-work_Sans capitalize">
-            service
-          </h1>
-          <p class="text-lg text-black/50">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna.
-          </p>
+  <!-- start intro-faq -->
+  <section class="mt-[100px] lg:mt-[100px] lg:pt-0">
+    <div class="container px-4 mx-auto">
+      <div class="flex flex-col items-center gap-8 lg:max-w-[50%] justify-center mx-auto">
+        <h1 class="text-xl lg:text-4xl font-work_Sans"> Hello, How Can we Help?</h1>
+        <div class="relative">
+          <p class=" mx-auto  lg:max-w-[50%] text-sm text-center text-black/50">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diama sed diamased diama.</p>
+        <img class="absolute left-0 lg:-left-32 -top-20" src="assets/images/ward.webp" alt="work" />
         </div>
-        <div>
-          <img src="assets/images/service-intro.webp" alt="intro" />
-        </div>
+        <form method="post" class="flex flex-row border-[1px] border-gray-400 rounded-full p-1 w-full items-center">
+          <div class="px-2 text-center">
+            <svg  viewBox="0 0 24 24" width="24" height="24" stroke="#00000080" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </div>
+            <input class="w-full px-6 text-lg outline-none text-black/50" type="search" placeholder="Search Question " />
+            <div class="main-btn">
+              <button class="btn">Search</button>
+            </div>
+        </form>
       </div>
     </div>
   </section>
 
-  <!-- start Our Service -->
-  <section class="mt-[100px] lg:mt-[150px]">
+  <!-- start Frequently -->
+  <section class="mt-[100px] lg:mt-[250px]">
     <div class="container px-4 mx-auto lg:px-20">
       <div class="text-center">
-        <h1 class="text-3xl text-center lg:text-4xl font-work_Sans">
-          Our Service
+        <h1 class="py-8 text-4xl font-work_Sans">
+          Frequently Asked Questions
         </h1>
       </div>
-      <div class="grid grid-cols-1 gap-12 pt-12 lg:grid-cols-3 place-items-center">
-        <div class="flex flex-col items-center gap-3">
-          <div
-            class="p-2 h-[100px] w-[80px] rounded-md bg-gradient-to-br from-primary to-[#89d292] flex justify-center items-center">
-            <img class="h-[auto]" src="assets/images/serv-i-1.webp" alt="serv-1" />
+      <div class="grid grid-cols-2 gap-4 pt-4 lg:gap-2 lg:grid-cols-4 place-items-center">
+        <a href="#" class="flex transition-all duration-200 group lg:w-1/2 menu-item ">
+          <div class="flex justify-center menu-img">
+            <img class="p-2" src="assets/images/Menu-faq.svg" alt="pizza" />
+            
           </div>
-          <h1 class="text-xl font-bold lg:text-2xl font-work_Sans">
-            Food Delivery
-          </h1>
-          <p class="text-sm text-center text-black/50">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-          </p>
-        </div>
-        <div class="flex flex-col items-center gap-3">
-          <div
-            class="p-2 h-[100px] w-[80px] rounded-md bg-gradient-to-br from-primary to-[#89d292] flex justify-center items-center">
-            <img class=" h-[auto] " src="assets/images/serv-i-2.webp" alt="serv-1" />
+          <div class="relative flex flex-row items-center gap-2">
+            <h4 class="text-md font-work_Sans group-hover:text-white">
+              Pizza
+            </h4>
           </div>
-          <h1 class="text-xl font-bold lg:text-2xl font-work_Sans">
-            Grocery Delivery
-          </h1>
-          <p class="text-sm text-center text-black/50">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-          </p>
-        </div>
-        <div class="flex flex-col items-center gap-3">
-          <div
-            class="p-2 h-[100px] w-[80px] rounded-md bg-gradient-to-br from-primary to-[#89d292] flex justify-center items-center">
-            <img class=" h-[auto]" src="assets/images/serv-i-3.webp" alt="serv-1" />
+        </a>
+        <a href="#" class="flex transition-all duration-200 group lg:w-1/2 menu-item ">
+          <div class="flex justify-center menu-img">
+            <img class="p-2" src="assets/images/Mobile_banking-faq.svg" alt="pizza" />
           </div>
-          <h1 class="text-xl font-bold lg:text-2xl font-work_Sans">
-            Drive in Restaurant
-          </h1>
-          <p class="text-sm text-center text-black/50">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-          </p>
-        </div>
-        <div class="flex flex-col items-center gap-3">
-          <div
-            class="p-2 h-[100px] w-[80px] rounded-md bg-gradient-to-br from-primary to-[#89d292] flex justify-center items-center">
-            <img class=" h-[auto]" src="assets/images/serv-i-4.webp" alt="serv-1" />
+          <div class="relative flex flex-row items-center gap-2">
+            <h4 class="text-md font-work_Sans group-hover:text-white">
+              Pizza
+            </h4>
           </div>
-          <h1 class="text-xl font-bold lg:text-2xl font-work_Sans">
-            Grocery Shopping
-          </h1>
-          <p class="text-sm text-center text-black/50">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-          </p>
-        </div>
-        <div class="flex flex-col items-center gap-3">
-          <div
-            class="p-2 h-[100px] w-[80px] rounded-md bg-gradient-to-br from-primary to-[#89d292] flex justify-center items-center">
-            <img class=" h-[auto]" src="assets/images/serv-i-5.webp" alt="serv-1" />
+        </a>
+        <a href="#" class="flex transition-all duration-200 group lg:w-1/2 menu-item ">
+          <div class="flex justify-center menu-img">
+            <img class="p-2" src="assets/images/Driver-faq.svg" alt="pizza" />
           </div>
-          <h1 class="text-xl font-bold lg:text-2xl font-work_Sans">
-            Join Merchant
-          </h1>
-          <p class="text-sm text-center text-black/50">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-          </p>
-        </div>
-        <div class="flex flex-col items-center gap-3">
-          <div
-            class="p-2 h-[100px] w-[80px] rounded-md bg-gradient-to-br from-primary to-[#89d292] flex justify-center items-center">
-            <img class=" h-[auto]" src="assets/images/serv-i-6.webp" alt="serv-1" />
+          <div class="relative flex flex-row items-center gap-2">
+            <h4 class="text-md font-work_Sans group-hover:text-white">
+              Pizza
+            </h4>
           </div>
-          <h1 class="text-xl font-bold lg:text-2xl font-work_Sans">
-            Join courier
-          </h1>
-          <p class="text-sm text-center text-black/50">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-          </p>
-        </div>
+        </a>
+         <a href="#" class="flex transition-all duration-200 group lg:w-1/2 menu-item ">
+          <div class="flex justify-center menu-img">
+            <img class="p-2" src="assets/images/Location-faq.svg" alt="pizza" />
+          </div>
+          <div class="relative flex flex-row items-center gap-2">
+            <h4 class="text-md font-work_Sans group-hover:text-white">
+              Pizza
+            </h4>
+          </div>
+        </a>
       </div>
-    </div>
-  </section>
-
-  <!-- start Download App  -->
-  <section class="mt-[100px] lg:mt-[200px]">
-    <div class="container px-4 mx-auto lg:px-20">
-      <div class="flex flex-row items-center gap-2 px-4 py-2 mb-4 rounded-full lg:px-2 lg:w-1/2 bg-secondary">
-        <div>
-          <img src="assets/images/Mobile_banking.webp" alt="Mobile_banking" />
-        </div>
-        <div>
-          <h4 class="text-sm lg:text-2xl font-work_Sans text-primary">
-            Download App And Get Your Discount
-          </h4>
-        </div>
-      </div>
-      <div class="grid grid-cols-1 gap-12 lg:gap-6 lg:grid-cols-2">
-        <div>
-          <h1 class="text-5xl font-work_Sans">Make You Easier And Happier</h1>
-        </div>
-        <div>
-          <p class="text-lg text-black/50">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua.
-          </p>
-        </div>
-      </div>
-      <div class="grid grid-cols-1 gap-16 pt-12 lg:grid-cols-3">
-        <div class="flex flex-col items-center justify-center gap-4">
-          <img class="w-full max-w-[150px]" src="assets/images/feat-1.webp" alt="feature" />
-          <h2 class="text-2xl font-bold font-work_Sans">
-            The Best Courier
-          </h2>
-          <p class="text-center text-black/50">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-          </p>
-        </div>
-        <div class="flex flex-col items-center justify-center gap-4">
-          <img class="w-full max-w-[150px]" src="assets/images/feat-2.webp" alt="feature" />
-          <h2 class="text-2xl font-bold font-work_Sans">
-            Easy to Use
-          </h2>
-          <p class="text-center text-black/50">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-          </p>
-        </div>
-        <div class="flex flex-col items-center justify-center gap-4">
-          <img class="w-full max-w-[150px]" src="assets/images/feat-3.webp" alt="feature" />
-          <h2 class="text-2xl font-bold font-work_Sans">
-            24/7 Support
-          </h2>
-          <p class="text-center text-black/50">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- start Wait a Minute For Delicious -->
-  <section class="mt-[100px] lg:mt-[250px]">
-    <div class="container px-4 mx-auto lg:px-20">
-      <div class="grid grid-cols-1 gap-12 placeholder:lg:gap-4 lg:gap-0 lg:grid-cols-2">
-        <div class="max-h-[400px]  relative  flex justify-center order-2 lg:order-1">
-          <div
-            class="max-h-[400px] max-w-[300px] absolute bg-secondary w-full h-full left-0 lg:left-12 -top-6 -z-20 rounded-xl">
-          </div>
-          <img class="h-full" src="assets/images/wait-serv.webp" alt="coffee" />
-        </div>
-        <div class="relative order-1 p-4 lg:p-12 lg:order-2">
-          <h1 class="pb-8 text-5xl font-work_Sans">Wait a Minute For Delicious</h1>
-          <div class="pt-6">
-            <div class="relative flex flex-col gap-4 p-2 bg-white rounded-lg shadow-lg customers-card">
-              <div class=" -top-8 w-[60px] h-[60px] rounded-full absolute overflow-hidden left-4">
-                <img src="assets/images/user.webp" alt="user" />
-              </div>
-              <p class="mt-6 text-sm text-black/50">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore et dolore magna aliquyam erat, sed diam voluptua.
-              </p>
-              <div class="flex flex-row gap-2">
-                <div>
-                  <h1 class="text-xl">Abobaker Hilal</h1>
-                </div>
-                <div class="flex flex-row items-center w-auto gap-2">
-                  <div><img src="assets/images/star.webp" alt="start" /></div>
-                  <div><img src="assets/images/star.webp" alt="start" /></div>
-                  <div><img src="assets/images/star.webp" alt="start" /></div>
-                  <div><img src="assets/images/star.webp" alt="start" /></div>
-                  <div><img src="assets/images/star.webp" alt="start" /></div>
-                  <span class="text-black/50">(5.0)</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- start Questions -->
-  <section class="mt-[100px] lg:mt-[250px]">
-    <div class="container px-4 mx-auto lg:px-20">
-      <div class="grid grid-cols-1 gap-12 lg:gap-0 lg:grid-cols-2 place-items-center">
-        <div>
-          <div class="flex flex-col gap-2 ">
-            <h1 class="text-xl lg:text-4xl font-work_Sans">
-              Frequently Asked Questions
-            </h1>
-            <div class="bg-white">
+       <div class="mt-12 bg-white">
               <!-- Accordion Wrapper -->
               <div class="transition border-b-[1px] border-gray-200">
                 <!-- header -->
@@ -389,11 +250,76 @@
                   </p>
                 </div>
               </div>
+       </div>
+    </div>
+  </section>
+
+  <!-- start Customer Service -->
+  <section class="mt-[100px] lg:mt-[200px]">
+    <div class="container px-4 mx-auto lg:px-20">
+      <div class="grid grid-cols-1 gap-12 lg:gap-6 lg:grid-cols-2">
+        <div class="bg-secondary p-4 relative rounded-xl lg:max-w-[280px] lg:mx-auto max-h-[300px]">
+          <h1 class="py-2 text-xl text-primary lg:text-2xl">Customer Service</h1>
+          <div class="py-4 work-content">
+            <div class="flex flex-col items-start gap-8">
+              <div class="flex flex-row items-center justify-start gap-2">
+                 <div class="bg-primary w-[30px] h-[30px] rounded-full flex justify-center items-center">
+                    <img class="w-[15px]" src="assets/images/phone-faq.svg" alt="">
+                  </div>
+                <bdo dir="ltr" class="text-sm font-work_Sans">
+                   (316) 555-0116
+                </bdo>
+              </div>
+              <div class="flex flex-row items-center justify-start gap-2">
+                 <div class="bg-primary w-[30px] h-[30px] rounded-full flex justify-center items-center">
+                    <img class="w-[15px]" src="assets/images/phone-faq.svg" alt="">
+                  </div>
+                <bdo dir="ltr" class="text-sm font-work_Sans">
+                   (316) 555-0116
+                </bdo>
+              </div>
+             <div class="flex flex-row items-center justify-start gap-2">
+                 <div class="bg-primary w-[30px] h-[30px] rounded-full flex justify-center items-center">
+                    <img class="w-[15px]" src="assets/images/phone-faq.svg" alt="">
+                  </div>
+                <bdo dir="ltr" class="text-sm font-work_Sans">
+                 (316) 555-0116
+                </bdo>
+              </div>
             </div>
           </div>
+          <hr>
+          <p class="py-3 text-sm font-work_Sans">Monday - Friday ( 8AM-7PM)</p>
         </div>
-        <div class="max-h-[500px] h-full">
-          <img class="h-[inherit]" src="assets/images/serv-burgar.webp" alt="download app" />
+        <div>
+          <h1 class="pb-3 text-xl text-center lg:text-4xl font-work_Sans">Still Have a Questions?</h1>
+          <form action="#" method="post"
+        class="flex flex-col w-full max-w-full gap-6 px-4 py-10 bg-white lg:px-10">
+
+        <div class="relative">
+          <input type="text" id="name" class="input-form peer"
+           placeholder=" " />
+          <label for="name" class="label-form scale-70 peer-focus:scale-70 peer-placeholder-shown:scale-100 ">
+            Your Name
+            </label>
+        </div>
+        <div class="relative">
+          <input type="email" id="email" class="input-form peer"
+            pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" placeholder=" " />
+          <label for="email" class="label-form scale-70 peer-focus:scale-70 peer-placeholder-shown:scale-100 ">Your
+            Email</label>
+        </div>
+        <div class="relative">
+          <textarea col="20" id="Questions" class="!rounded-xl input-form peer"
+             placeholder=" "></textarea>
+          <label for="Questions" class="label-form scale-70 peer-focus:scale-70 peer-placeholder-shown:scale-100 ">
+            Your Questions
+          </label>
+        </div>
+        <div class=" main-btn">
+          <button class="w-full !max-w-full btn">Send Now </button>
+        </div>
+      </form>
         </div>
       </div>
     </div>
@@ -403,7 +329,7 @@
   <footer class="mt-[100px] lg:mt-[250px] pb-4">
     <div class="container px-4 mx-auto lg:px-20">
       <div class="relative">
-        <a href="../index.html" class="block"><img src="assets/images/Logo.webp" alt="logo" /></a>
+        <a href="index.html" class="block"><img src="assets/images/Logo.webp" alt="logo" /></a>
         <img class="absolute right-0 -top-20" src="assets/images/ward.webp" alt="work" />
       </div>
       <div class="grid grid-cols-2 gap-8 py-12 lg:gap-4 lg:grid-cols-4">
