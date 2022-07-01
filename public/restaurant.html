@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Road - restaurant</title>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+ <!-- start header -->
+  <header class="header !bg-secondary [&>*]:bg-secondary">
+    <div>
+      <a href="index.html"><img src="assets/images/Logo.webp" alt="Food" /></a>
+    </div>
+    <div class="hide-menu lg:block menu-mobile">
+      <div class="py-1 px-4 inline-flex my-4 rounded-lg text-black bg-[#d6d8d6]  lg:hidden">
+        <button class="capitalize text-start close">close</button>
+      </div>
+      <ul class="flex flex-col gap-8 pt-4 lg:pt-0 lg:flex-row lg:items-center">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="restaurant.html">Restaurant</a></li>
+        <li class="relative [&:hover>ul]:block lg:[&:hover>ul]:opacity-100">
+          <div class="flex flex-row items-center">
+            <a class="nav-link " type="button" data-dropdown-toggle="dropdown" href="#">
+              Pages
+            </a>
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+          <ul class="transition-transform duration-1000 ease-in-out rounded-lg dropdown-menu"
+            aria-labelledby="dropdown">
+            <li>
+              <a href="become-merchant.html" class="sub-nav__link ">Become Merchant</a>
+            </li>
+            <li>
+              <a href="single-restaurant.html" class="sub-nav__link ">Single Restaurant</a>
+            </li>
+            <li>
+              <a href="our-team.html" class="sub-nav__link ">Our Team</a>
+            </li>
+            <li>
+              <a href="faq.html" class="sub-nav__link "> FAQ</a>
+            </li>
+          </ul>
+        </li>
+        <li><a class="nav-link" href="service.html">Service</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="py-8 main-btn lg:hidden">
+        <a href="login.html" class="btn">login</a>
+      </div>
+    </div>
+    <div class="items-center hidden gap-8 lg:flex row">
+      <a href="!#" class="block cursor-pointer">
+        <img src="assets/images/Search Icon.webp" alt="Search" />
+      </a>
+      <div class="main-btn">
+        <a href="login.html" class="btn">login</a>
+      </div>
+    </div>
+    <button class="block w-[30px] lg:hidden open-nav">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke-width="2"
+        stroke="#000000b3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-align-right">
+        <line x1="21" y1="10" x2="7" y2="10"></line>
+        <line x1="21" y1="6" x2="3" y2="6"></line>
+        <line x1="21" y1="14" x2="3" y2="14"></line>
+        <line x1="21" y1="18" x2="7" y2="18"></line>
+      </svg>
+    </button>
+  </header>
+
+  <!-- start intro-restaurant -->
+  <section class="bg-secondary pt-[50px] lg:pt-0">
+    <div class="container px-4 mx-auto lg:px-20">
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="flex flex-col items-start justify-center gap-16 lg:gap-8">
+          <h1 class="text-3xl capitalize font-work_Sans ">
+            Discover Restaurant
+          </h1>
+          <p class="text-lg text-black/50">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna.
+          </p>
+        </div>
+        <div>
+          <img src="assets/images/restaurant.webp" alt="intro" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- start Let's Find Something Delicious For You -->
+  <section class="mt-[100px] lg:mt-[100px] lg:pt-0">
+    <div class="container px-4 mx-auto">
+      <div class="flex flex-col items-center gap-8 lg:max-w-[50%] justify-center mx-auto">
+        <h1 class="text-xl lg:text-3xl font-work_Sans">Let's Find Something Delicious For You</h1>
+        <div class="relative">
+          <p class=" mx-auto  lg:max-w-[50%] text-sm text-center text-black/50">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diama sed diamased diama.</p>
+        </div>
+        <form method="post" class="lg:max-w-[70%] flex flex-row border-[1px] border-gray-400 rounded-full p-1 w-full items-center">
+            <input class="w-full px-6 text-lg outline-none text-black/50" type="search" placeholder="Search Question " />
+            <button class="px-2 text-center w-[30px] h-[30px] flex justify-center items-center rounded-full bg-primary">
+            <svg  viewBox="0 0 24 24" width="24" height="24" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+ <!-- start Articles For Food Lovers! -->
+  <section class="mt-[100px] lg:mt-[250px]">
+    <div class="container px-4 mx-auto lg:px-20">
+      <div class="flex flex-row items-center justify-between">
+        <div>
+          <h1 class="text-2xl font-work_Sans">
+           Recommended Restaurant
+          </h1>
+        </div>
+        <div>
+          <form action="#">
+             <div class="relative w-full">
+            <select for="country" class="input-form peer !bg-[#e6ffe9] text-center cursor-pointer !border-0">
+              <option selected>Filter</option>
+              <option value="US">United States</option>
+              <option value="CA">Canada</option>
+              <option value="FR">France</option>
+              <option value="DE">Germany</option>
+            </select>
+          </div>
+          </form>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 gap-8 pt-12 lg:grid-cols-3 ">
+        <div class="food-card">
+          <div class="max-h-[300px] relative overflow-hidden">
+            <img class="w-full h-auto" src="assets/images/res-1.webp" alt="food" />
+            <div class="absolute flex flex-row items-center gap-3 px-3 py-2 bg-white rounded-full bottom-4 left-4">
+              <p class="text-md font-work_Sans">New York City</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-8 p-8 food-card__content">
+
+            <h1 class="text-2xl">Empire and Food Cafe</h1>
+            <p class="text-black/50">Consetetur sadipscing elitr, sed . . . .</p>
+           <div class="flex flex-col justify-between gap-4 lg:flex-row">
+             <div class="order-2 main-btn lg:order-1">
+                <a href="#" class="btn">View </a>
+              </div>
+               <div class="flex flex-row items-center order-1 w-auto gap-2 lg:order-2">
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <span class="text-black/50">(5.0)</span>
+                      </div>
+           </div> 
+          </div>
+        </div>
+        <div class="food-card">
+          <div class="max-h-[300px] relative overflow-hidden">
+            <img class="w-full h-auto" src="assets/images/res-2.webp" alt="food" />
+            <div class="absolute flex flex-row items-center gap-3 px-3 py-2 bg-white rounded-full bottom-4 left-4">
+              <p class="text-md font-work_Sans">New York City</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-8 p-8 food-card__content">
+
+            <h1 class="text-2xl">Empire and Food Cafe</h1>
+            <p class="text-black/50">Consetetur sadipscing elitr, sed . . . .</p>
+           <div class="flex flex-col justify-between gap-4 lg:flex-row">
+             <div class="order-2 main-btn lg:order-1">
+                <a href="#" class="btn">View </a>
+              </div>
+               <div class="flex flex-row items-center order-1 w-auto gap-2 lg:order-2">
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <span class="text-black/50">(5.0)</span>
+                      </div>
+           </div> 
+          </div>
+        </div>
+        <div class="food-card">
+          <div class="max-h-[300px] relative overflow-hidden">
+            <img class="w-full h-auto" src="assets/images/res-3.webp" alt="food" />
+            <div class="absolute flex flex-row items-center gap-3 px-3 py-2 bg-white rounded-full bottom-4 left-4">
+              <p class="text-md font-work_Sans">New York City</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-8 p-8 food-card__content">
+
+            <h1 class="text-2xl">Empire and Food Cafe</h1>
+            <p class="text-black/50">Consetetur sadipscing elitr, sed . . . .</p>
+           <div class="flex flex-col justify-between gap-4 lg:flex-row">
+             <div class="order-2 main-btn lg:order-1">
+                <a href="#" class="btn">View </a>
+              </div>
+               <div class="flex flex-row items-center order-1 w-auto gap-2 lg:order-2">
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <span class="text-black/50">(5.0)</span>
+                      </div>
+           </div> 
+          </div>
+        </div>
+        <div class="food-card">
+          <div class="max-h-[300px] relative overflow-hidden">
+            <img class="w-full h-auto" src="assets/images/res-1.webp" alt="food" />
+            <div class="absolute flex flex-row items-center gap-3 px-3 py-2 bg-white rounded-full bottom-4 left-4">
+              <p class="text-md font-work_Sans">New York City</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-8 p-8 food-card__content">
+
+            <h1 class="text-2xl">Empire and Food Cafe</h1>
+            <p class="text-black/50">Consetetur sadipscing elitr, sed . . . .</p>
+           <div class="flex flex-col justify-between gap-4 lg:flex-row">
+             <div class="order-2 main-btn lg:order-1">
+                <a href="#" class="btn">View </a>
+              </div>
+               <div class="flex flex-row items-center order-1 w-auto gap-2 lg:order-2">
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <span class="text-black/50">(5.0)</span>
+                      </div>
+           </div> 
+          </div>
+        </div>
+        <div class="food-card">
+          <div class="max-h-[300px] relative overflow-hidden">
+            <img class="w-full h-auto" src="assets/images/res-2.webp" alt="food" />
+            <div class="absolute flex flex-row items-center gap-3 px-3 py-2 bg-white rounded-full bottom-4 left-4">
+              <p class="text-md font-work_Sans">New York City</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-8 p-8 food-card__content">
+
+            <h1 class="text-2xl">Empire and Food Cafe</h1>
+            <p class="text-black/50">Consetetur sadipscing elitr, sed . . . .</p>
+           <div class="flex flex-col justify-between gap-4 lg:flex-row">
+             <div class="order-2 main-btn lg:order-1">
+                <a href="#" class="btn">View </a>
+              </div>
+               <div class="flex flex-row items-center order-1 w-auto gap-2 lg:order-2">
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <span class="text-black/50">(5.0)</span>
+                      </div>
+           </div> 
+          </div>
+        </div>
+        <div class="food-card">
+          <div class="max-h-[300px] relative overflow-hidden">
+            <img class="w-full h-auto" src="assets/images/res-3.webp" alt="food" />
+            <div class="absolute flex flex-row items-center gap-3 px-3 py-2 bg-white rounded-full bottom-4 left-4">
+              <p class="text-md font-work_Sans">New York City</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-8 p-8 food-card__content">
+
+            <h1 class="text-2xl">Empire and Food Cafe</h1>
+            <p class="text-black/50">Consetetur sadipscing elitr, sed . . . .</p>
+           <div class="flex flex-col justify-between gap-4 lg:flex-row">
+             <div class="order-2 main-btn lg:order-1">
+                <a href="#" class="btn">View </a>
+              </div>
+               <div class="flex flex-row items-center order-1 w-auto gap-2 lg:order-2">
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <div><img src="assets/images/star.webp" alt="start" /></div>
+                        <span class="text-black/50">(5.0)</span>
+                      </div>
+           </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- start The Best Food Delivery -->
+  <section class="mt-[100px] lg:mt-[250px]">
+    <div class="container px-4 mx-auto lg:px-20">
+      <div class="grid grid-cols-1 gap-12 lg:gap-0 lg:grid-cols-2 place-items-center">
+        <div>
+          <div class="flex flex-col gap-8 simple-order__content">
+            <h1 class="text-3xl lg:text-5xl font-work_Sans">
+              The Best Food Delivery App. Download Now!
+            </h1>
+            <p class="text-lg text-black/50 font-open-sans">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+            <h2 class="pb-4 text-2xl font-work_Sans">
+              download available
+            </h2>
+            <div class="flex flex-row gap-2">
+              <a href="#" class="block">
+                <img src="assets/images/google-play-bad.webp" alt="download app from google play" />
+              </a>
+              <a href="#" class="block">
+                <img src="assets/images/app-store-badge.webp" alt="download app from app store " />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="assets/images/about-down.webp" alt="download app" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- start Footer -->
+  <footer class="mt-[100px] lg:mt-[250px] pb-4">
+    <div class="container px-4 mx-auto lg:px-20">
+      <div class="relative">
+        <a href="index.html" class="block"><img src="assets/images/Logo.webp" alt="logo" /></a>
+        <img class="absolute right-0 -top-20" src="assets/images/ward.webp" alt="work" />
+      </div>
+      <div class="grid grid-cols-2 gap-8 py-12 lg:gap-4 lg:grid-cols-4">
+        <div>
+          <h1 class="text-xl capitalize">
+            Why us?
+          </h1>
+          <ul class="flex flex-col gap-3 pt-6">
+            <li><a href="#" class="nav-link">Responsive</a></li>
+            <li><a href="#" class="nav-link">Engagement</a></li>
+            <li><a href="#" class="nav-link">Scale</a></li>
+            <li><a href="#" class="nav-link">Watch the Demo</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="text-xl capitalize">
+            Resources
+          </h1>
+          <ul class="flex flex-col gap-3 pt-6">
+            <li><a href="#" class="nav-link">Developers</a></li>
+            <li><a href="#" class="nav-link">Apps</a></li>
+            <li><a href="#" class="nav-link">Blog</a></li>
+            <li><a href="#" class="nav-link">Help Center</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="text-xl capitalize">
+            Company
+          </h1>
+          <ul class="flex flex-col gap-3 pt-6">
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Merchant</a></li>
+            <li><a href="#" class="nav-link">Career</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="text-xl capitalize">
+            Our Social Media
+          </h1>
+          <div class="flex flex-col gap-4 pt-4">
+            <div class="flex flex-row gap-4">
+              <div class="w-[20px] h-[20px] rounded-md bg-primary p-1">
+                <img src="assets/images/facebook.webp" alt="face" />
+              </div>
+              <div class="w-[20px] h-[20px] rounded-md bg-primary p-1">
+                <img src="assets/images/instagram.webp" alt="face" />
+              </div>
+              <div class="w-[20px] h-[20px] rounded-md bg-primary p-1">
+                <img src="assets/images/twitter.webp" alt="face" />
+              </div>
+            </div>
+            <div>
+              <h class="text-xl font-work_Sans">
+                Download App
+              </h>
+              <div class="flex flex-row gap-2 pt-4">
+                <a href="#" class="block">
+                  <img src="assets/images/google-play-bad.webp" alt="download app from google play" />
+                </a>
+                <a href="#" class="block">
+                  <img src="assets/images/app-store-badge.webp" alt="download app from app store " />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="flex flex-col justify-between gap-4 py-6 lg:gap-0 lg:flex-row">
+        <div class="order-2 lg:order-1">
+          <p class="text-black/50"> Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script> FoodRoad Food delivery </p>
+        </div>
+        <div class="order-1 lg:order-2">
+          <ul class="flex flex-row gap-4">
+            <li><a href="#" class="!text-sm nav-link">Privacy Policy</a></li>
+            <li><a href="#" class="!text-sm nav-link">Cookie Policy</a></li>
+            <li><a href="#" class="!text-sm nav-link">Term & Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- js lib -->
+  <script src="js/libs/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
