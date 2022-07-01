@@ -109,3 +109,11 @@ html {
 .accordion-content {
   transition: max-height 0.3s ease-out, padding 0.3s ease;
 }
+
+.input-form {
+  @apply block px-2.5 py-2 w-full text-lg text-black/50 bg-transparent rounded-full border-[1px] border-gray-200 appearance-none   focus:outline-none focus:ring-0 focus:border-gray-200  invalid:border-red-500 ;
+}
+
+.label-form {
+  @apply absolute text-sm text-gray-500 duration-300 transform -translate-y-4 top-1 z-10 origin-[0] bg-white  px-2 peer-focus:px-2 peer-focus:text-gray-400 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-1  peer-focus:-translate-y-4 left-4 peer-invalid:text-red-500;
+}

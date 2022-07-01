@@ -15,7 +15,8 @@ module.exports = {
         'mobile-screen': "url('../img/screen-mobile.png')",
       },
       colors: {
-        'primary': '#519259'
+        'primary': '#519259',
+        'secondary': '#f8fcf8'
       },
     },
   },
