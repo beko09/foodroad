@@ -21,11 +21,11 @@
         <button class="capitalize text-start close">close</button>
       </div>
       <ul class="flex flex-col gap-8 pt-4 lg:pt-0 lg:flex-row lg:items-center">
-        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link active" href="index.html">Home</a></li>
         <li><a class="nav-link" href="about.html">About</a></li>
         <li><a class="nav-link" href="restaurant.html">Restaurant</a></li>
-        <li class="relative [&:hover>ul]:block lg:[&:hover>ul]:opacity-100">
-          <div class="flex flex-row items-center">
+        <li class="relative drop-link">
+          <div class="flex flex-row items-center ">
             <a class="nav-link " type="button" data-dropdown-toggle="dropdown" href="#">
               Pages
             </a>
@@ -963,6 +963,13 @@
       </div>
     </div>
   </footer>
+
+  <!-- loader -->
+ <div class="loader">
+   <h1 class="text-xl text-white lg:text-4xl">
+     loading...
+   </h1>
+ </div>
   <!-- js lib -->
   <script src="js/libs/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
