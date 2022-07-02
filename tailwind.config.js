@@ -11,8 +11,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero': "url('../assets/images/hero.webp')",
-        'web-screen': "url('../assets/images/hero.webp')",
-        'mobile-screen': "url('../img/screen-mobile.png')",
+        'single-restaurant': "url('../assets/images/single-res.webp')",
       },
       colors: {
         'primary': '#519259',
