@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Food Road - Contact</title>
+  <title>Food Road - become-merchant </title>
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
- <!-- start header -->
+  <!-- start header -->
   <header class="header !bg-secondary [&>*]:bg-secondary">
     <div>
       <a href="index.html"><img src="assets/images/Logo.webp" alt="Food" /></a>
@@ -26,7 +26,7 @@
         <li><a class="nav-link" href="restaurant.html">Restaurant</a></li>
         <li class="relative drop-link">
           <div class="flex flex-row items-center ">
-            <a class="nav-link " type="button" data-dropdown-toggle="dropdown" href="#">
+            <a class="nav-link active" type="button" data-dropdown-toggle="dropdown" href="#">
               Pages
             </a>
             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -37,7 +37,7 @@
           <ul class="transition-transform duration-1000 ease-in-out rounded-lg dropdown-menu"
             aria-labelledby="dropdown">
             <li>
-              <a href="become-merchant.html" class="sub-nav__link ">Become Merchant</a>
+              <a href="become-merchant.html" class="sub-nav__link active">Become Merchant</a>
             </li>
             <li>
               <a href="single-restaurant.html" class="sub-nav__link ">Single Restaurant</a>
@@ -51,7 +51,7 @@
           </ul>
         </li>
         <li><a class="nav-link" href="service.html">Service</a></li>
-        <li><a class="nav-link active" href="contact.html">Contact</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
       <div class="py-8 main-btn lg:hidden">
         <a href="login.html" class="btn">login</a>
@@ -76,13 +76,13 @@
     </button>
   </header>
 
-  <!-- start intro-contact -->
-  <section class="bg-secondary pt-[50px] ">
+  <!-- start become-merchant -->
+  <section class="bg-secondary pt-[50px] lg:pt-0">
     <div class="container px-4 mx-auto lg:px-20">
       <div class="grid grid-cols-1 lg:grid-cols-2">
         <div class="flex flex-col items-start justify-center gap-16 lg:gap-8">
-          <h1 class="capitalize text-3xl lg:text-[78px] font-work_Sans ">
-            Contact Us
+          <h1 class="text-xl capitalize lg:text-4xl font-work_Sans ">
+            Become Merchant
           </h1>
           <p class="text-lg text-black/50">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
@@ -90,106 +90,148 @@
           </p>
         </div>
         <div>
-          <img src="assets/images/contact-intro.webp" alt="intro" />
+          <img src="assets/images/merchant-intro.webp" alt="intro" />
         </div>
       </div>
     </div>
   </section>
 
-  <!-- start Send us a Message -->
+  <!-- start Earn Extra Money. Join With us Now -->
   <section class="mt-[100px] lg:mt-[200px]">
     <div class="container px-4 mx-auto lg:px-20">
-        <div class="flex flex-col items-center justify-center p-4 bg-secondary rounded-xl">
-          <h1 class="py-4 text-xl lg:text-4xl font-work_Sans">
-            Send us a Message
-          </h1>
-           <form  action="#" method="post"
-        class="flex flex-col w-full gap-6 px-4 py-8 my-12  lg:px-10 lg:max-w-[50%]">
-               <div class="flex flex-col gap-6 lg:flex-row lg:justify-between">
-                  <div class="relative">
-                    <input type="text" id="first" class="!bg-white input-form peer" placeholder=" " />
-                    <label for="first" class="label-form scale-70 peer-focus:scale-70 peer-placeholder-shown:scale-100 peer-focus:bg-secondary ">Your
-                      Name</label>
-                  </div>
-                  <div class="relative">
-                    <input type="email" id="last" class="!bg-white input-form peer" placeholder=" " />
-                    <label for="last" class="label-form scale-70 peer-focus:scale-70 peer-placeholder-shown:scale-100 peer-focus:bg-secondary ">Your
-                      Email</label>
-                  </div>
-               </div>
-               <div class="flex flex-col gap-6 lg:flex-row lg:justify-between">
-                  <div class="relative">
-                    <input type="tel" id="phone" class="!bg-white input-form peer" placeholder=" " />
-                    <label for="phone" class="label-form scale-70 peer-focus:scale-70 peer-placeholder-shown:scale-100 peer-focus:bg-secondary ">Your
-                      Phone</label>
-                  </div>
-                  <div class="relative">
-                    <input type="text" id="Subject" class="!bg-white input-form peer" placeholder=" " />
-                    <label for="Subject" class="label-form scale-70 peer-focus:scale-70 peer-placeholder-shown:scale-100 peer-focus:bg-secondary ">Your
-                      Subject</label>
-                  </div>
-               </div>
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
+        <div class="relative w-fulll ">
+          <img class="max-h-[600px] rounded-xl" src="assets/images/merchant-1.webp" alt="work" />
+
+        </div>
+        <div>
+          <div class="flex flex-col gap-10 lg:px-4 hero-content">
+            <h1 class="text-3xl lg:text-5xl font-work_Sans">
+              Earn Extra Money. Join With us Now
+            </h1>
+            <p class="text-sm text-black/70 font-open-sans">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+            <form action="#" method="post" class="flex flex-col w-full max-w-full gap-6 py-4 bg-white ">
+
               <div class="relative">
-                <textarea col="20" id="Questions" class="!rounded-xl input-form peer !bg-white"
-                  placeholder=" "></textarea>
-                <label for="Questions" class="label-form scale-70 peer-focus:scale-70 peer-placeholder-shown:scale-100 peer-focus:bg-secondary ">
-                  Your Questions
+                <input type="text" id="name" class="input-form peer" placeholder=" " />
+                <label for="name" class="label-form scale-70 peer-focus:scale-70 peer-placeholder-shown:scale-100 ">
+                  Your Name
                 </label>
               </div>
-              <div class=" main-btn">
-                <button class="w-full !max-w-full btn">Send Now </button>
+              <div class="relative">
+                <input type="text" id="name" class="input-form peer" placeholder=" " />
+                <label for="name" class="label-form scale-70 peer-focus:scale-70 peer-placeholder-shown:scale-100 ">
+                  Your Address
+                </label>
               </div>
-          </form>
-        </div>
-    </div>
-  </section>
+              <div class="relative">
+                <input type="email" id="email" class="input-form peer"
+                  pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" placeholder=" " />
+                <label for="email"
+                  class="label-form scale-70 peer-focus:scale-70 peer-placeholder-shown:scale-100 ">Your
+                  Email</label>
+              </div>
+              <div class="relative">
+                <input type="tel" id="phone" class="input-form peer" placeholder=" " />
+                <label for="phone"
+                  class="label-form scale-70 peer-focus:scale-70 peer-placeholder-shown:scale-100 ">Your
+                  Phone</label>
+              </div>
 
-   <!-- start Office Address -->
-  <section class="mt-[100px] lg:mt-[250px]">
-    <div class="container px-4 mx-auto lg:px-20">
-      <div class="grid grid-cols-1 gap-4 lg:gap-0 lg:grid-cols-2">
-        <div class="max-h-[400px]  relative overflow-hidden flex justify-center order-2 lg:order-1">
-          <img class="h-full" src="assets/images/Directions-contact.webp" alt="coffee" />
-        </div>
-        <div class="relative order-1 p-4 lg:p-12 lg:order-2">
-          <h1 class="pb-8 text-5xl font-work_Sans">Office Address</h1>
-          <div class="flex flex-col gap-4">
-            <div class="flex flex-row items-center gap-3 border-b-[1px] border-gray-200 py-6">
-              <div class="w-[30px] h-[30px] rounded-full flex items-center bg-primary justify-center">
-                <img class="w-[15px]" src="assets/images/map-contact.webp" alt="map"/>
+              <div class=" main-btn">
+                <button class="w-full btn">Register Now </button>
               </div>
-              <div>
-                <h1>2118 Thornridge Cir. Syracuse, Connecticut 35624</h1>
-              </div>
-            </div>
-            <div class="flex flex-row items-center gap-3 border-b-[1px] border-gray-200 py-6">
-              <div class="w-[30px] h-[30px] rounded-full flex items-center bg-primary justify-center">
-                <img class="w-[15px]" src="assets/images/phone-faq.svg" alt="map"/>
-              </div>
-              <div>
-                <a href="tel:(316) 555-0116">(316) 555-0116</a>
-              </div>
-            </div>
-            <div class="flex flex-row items-center gap-3 border-b-[1px] border-gray-200 py-6">
-              <div class="w-[30px] h-[30px] rounded-full flex items-center bg-primary justify-center">
-                <img class="w-[15px]" src="assets/images/mail-contact.webp" alt="map"/>
-              </div>
-              <div>
-                <a href=""mailto:info@example.com>info@example.com</a>
-              </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- start map -->
+  <!-- start Simple Step to Earn Extra Money  -->
   <section class="mt-[100px] lg:mt-[200px]">
     <div class="container px-4 mx-auto lg:px-20">
-        <div class="flex flex-col items-center justify-center bg-white ">
-         <iframe class="rounded-xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246059.6801636051!2d32.71268661027286!3d15.501500992694938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x168e8fde9837cabf%3A0x191f55de7e67db40!2z2KfZhNiu2LHYt9mI2YXYjCDYp9mE2LPZiNiv2KfZhg!5e0!3m2!1sar!2s!4v1656681730330!5m2!1sar!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="grid grid-cols-1 gap-12 lg:gap-6 lg:grid-cols-2">
+        <div>
+          <h1 class="text-xl lg:text-4xl font-open-sans">Simple Step to Earn Extra Money</h1>
         </div>
+        <div class="flex flex-row gap-8 p-3 rounded-lg bg-secondary">
+          <div>
+            <img src="assets/images/merchant-Grow.webp" alt="b" />
+          </div>
+          <div>
+            <p class="text-primary">200%</p>
+            <p class="text-sm">income increases</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 gap-12 py-6 pt-8 lg:gap-6 lg:grid-cols-3">
+        <div class="flex flex-col gap-4">
+          <div class="flex flex-row items-center">
+            <span class="text-4xl text-primary">1</span>
+            <span class="hidden lg:inline-block h-[1px] w-[80%] bg-gray-400"></span>
+          </div>
+          <h1 class="text-xl lg:text-4xl text-primary font-open-sans">
+            Register online
+          </h1>
+          <p class="text-lg text-black/50">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+        </div>
+        <div class="flex flex-col gap-4">
+          <div class="flex flex-row items-center">
+            <span class="text-4xl text-primary">2</span>
+            <span class="hidden lg:inline-block h-[1px] w-[80%] bg-gray-400"></span>
+          </div>
+          <h1 class="text-xl lg:text-4xl text-primary font-open-sans">
+            Deliver Order
+          </h1>
+          <p class="text-lg text-black/50">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+        </div>
+        <div class="flex flex-col gap-4">
+          <div class="flex flex-row items-center">
+            <span class="text-4xl text-primary">3</span>
+          </div>
+          <h1 class="text-xl lg:text-4xl text-primary font-open-sans">
+            Earn Money
+          </h1>
+          <p class="text-lg text-black/50">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- start Why You Need to Join With Us -->
+  <section class="mt-[100px] lg:mt-[200px] ">
+    <div class="container px-4 mx-auto lg:px-20 ">
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
+        <div class="relative w-fulll ">
+          <img class="max-h-[600px] rounded-xl" src="assets/images/merchant-2.webp" alt="work" />
+
+        </div>
+        <div class="p-3 rounded-lg bg-secondary">
+          <div class="flex flex-col gap-12 lg:px-4 hero-content">
+            <h1 class="text-3xl lg:text-5xl font-work_Sans">
+              Earn Extra Money. Join With us Now
+            </h1>
+            <p class="text-sm text-black/70 font-open-sans">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+            <div class="flex flex-row gap-8">
+              <div class="flex flex-row">
+                <span class="text-3xl text-primary">1200</span>
+                <span class="text-3xl text-primary">+</span>
+              </div>
+              <h1 class="text-4xl font-work_Sans">Merchant</h1>
+            </div>
+            <div class="main-btn">
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 

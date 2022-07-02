@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Road - single restaurant</title>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+ <!-- start header -->
+  <header class="header">
+    <div>
+      <a href="index.html"><img src="assets/images/Logo.webp" alt="Food" /></a>
+    </div>
+    <div class="hide-menu lg:block menu-mobile">
+      <div class="py-1 px-4 inline-flex my-4 rounded-lg text-black bg-[#d6d8d6]  lg:hidden">
+        <button class="capitalize text-start close">close</button>
+      </div>
+      <ul class="flex flex-col gap-8 pt-4 lg:pt-0 lg:flex-row lg:items-center">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="restaurant.html">Restaurant</a></li>
+        <li class="relative drop-link">
+          <div class="flex flex-row items-center ">
+            <a class="nav-link active" type="button" data-dropdown-toggle="dropdown" href="#">
+              Pages
+            </a>
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+          <ul class="transition-transform duration-1000 ease-in-out rounded-lg dropdown-menu"
+            aria-labelledby="dropdown">
+            <li>
+              <a href="become-merchant.html" class="sub-nav__link ">Become Merchant</a>
+            </li>
+            <li>
+              <a href="single-restaurant.html" class="sub-nav__link active">Single Restaurant</a>
+            </li>
+            <li>
+              <a href="our-team.html" class="sub-nav__link ">Our Team</a>
+            </li>
+            <li>
+              <a href="faq.html" class="sub-nav__link "> FAQ</a>
+            </li>
+          </ul>
+        </li>
+        <li><a class="nav-link" href="service.html">Service</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="py-8 main-btn lg:hidden">
+        <a href="login.html" class="btn">login</a>
+      </div>
+    </div>
+    <div class="items-center hidden gap-8 lg:flex row">
+      <a href="!#" class="block cursor-pointer">
+        <img src="assets/images/Search Icon.webp" alt="Search" />
+      </a>
+      <div class="main-btn">
+        <a href="login.html" class="btn">login</a>
+      </div>
+    </div>
+    <button class="block w-[30px] lg:hidden open-nav">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke-width="2"
+        stroke="#000000b3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-align-right">
+        <line x1="21" y1="10" x2="7" y2="10"></line>
+        <line x1="21" y1="6" x2="3" y2="6"></line>
+        <line x1="21" y1="14" x2="3" y2="14"></line>
+        <line x1="21" y1="18" x2="7" y2="18"></line>
+      </svg>
+    </button>
+  </header>
+
+  <!-- start intro-single-restaurant. -->
+  <section class="single-restaurant__section ">
+    <div class="container relative px-4 mx-auto lg:px-20">
+      <div class="flex flex-col items-center justify-center gap-12 pt-24 ">
+        <div class="bg-primary w-[50px] h-[50px] rounded-full flex justify-center items-center p-2">
+          <img class="w-[20px]" src="assets/images/Location-sin.webp" alt="bg" />
+        </div>
+        <h1 class="text-xl text-white lg:text-5xl font-work_Sans">The Mama Restaurants</h1>
+        <p class="lg:max-w-[50%] text-white text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+          diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="single-restaurant__location ">
+      <div class="p-2 lg:border-b-0 lg:border-r-[1px] border-b-[1px] border-gray-200">
+        <h1 class="text-xl font-work_Sans">Location</h1>
+        <p class="text-sm text-black/50">2500 Mo Tower, El Nozha St ,El Harm</p>
+      </div>
+      <div class="p-2 lg:border-b-0 border-b-[1px] lg:border-r-[1px] border-gray-200">
+        <h1 class="text-xl font-work_Sans">Reviews</h1>
+        <div class="flex flex-row items-center w-auto gap-2">
+          <div><img src="assets/images/star.webp" alt="start" /></div>
+          <div><img src="assets/images/star.webp" alt="start" /></div>
+          <div><img src="assets/images/star.webp" alt="start" /></div>
+          <div><img src="assets/images/star.webp" alt="start" /></div>
+          <div><img src="assets/images/star.webp" alt="start" /></div>
+          <span class="text-black/50">(5.0)</span>
+        </div>
+      </div>
+      <div class="p-2">
+        <h1 class="text-xl font-work_Sans">Open Hours</h1>
+        <p class="text-sm text-black/50">11am – 12pm (Mon-Fri)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- start Popular Discount  -->
+  <section class="mt-[50px] lg:mt-[100px]">
+    <div class="container relative px-4 mx-auto lg:px-20">
+      <div class="flex flex-col justify-between gap-8 lg:flex-row">
+        <div>
+          <h1 class="text-xl lg:text-3xl font-open-sans">
+            Popular Discount
+          </h1>
+        </div>
+        <div class="flex flex-row gap-6">
+          <h1 class="text-lg font-work_Sans text-black/50">Countdown :</h1>
+          <div>
+            <p class="text-2xl text-primary">23<sup class="text-red-400">Hours</sup> 13 <sup
+                class="text-red-400">Minutes</sup></p>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 gap-12 pt-12 lg:grid-cols-2 place-items-center">
+        <div class=" popular-discount__card">
+          <h1 class="text-xl lg:text-3xl text-primary font-open-sans">
+            Cheese Stuffed Burgers
+          </h1>
+          <p class="text-sm text-black/50">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+          <div class="flex flex-row justify-between">
+            <div>
+              <p class="text-xl text-primary">$8.99 <sub class="text-red-500"><del>9.99</del></sub></p>
+            </div>
+            <div class="main-btn">
+              <a class="btn" href="">Order Now</a>
+            </div>
+          </div>
+          <img class="absolute -bottom-20 left-0 right-0 mx-auto rounded-full w-[250px] h-[250px] bg-secondary"
+            src="assets/images/food-1.webp" alt="food" />
+          <div
+            class="absolute left-0 right-0 flex flex-row items-center w-[200px] gap-2 p-2 mx-auto bg-white rounded-full bottom-2   justify-center">
+            <div><img src="assets/images/star.webp" alt="start" /></div>
+            <div><img src="assets/images/star.webp" alt="start" /></div>
+            <div><img src="assets/images/star.webp" alt="start" /></div>
+            <div><img src="assets/images/star.webp" alt="start" /></div>
+            <div><img src="assets/images/star.webp" alt="start" /></div>
+            <span class="text-black/50">(5.0)</span>
+          </div>
+        </div>
+        <div class="popular-discount__card">
+          <h1 class="text-xl lg:text-3xl text-primary font-open-sans">
+            seafood fried rice
+          </h1>
+          <p class="text-sm text-black/50">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+          <div class="flex flex-row justify-between">
+            <div>
+              <p class="text-xl text-primary">$4.99 <sub class="text-red-500"><del>5.99</del></sub></p>
+            </div>
+            <div class="main-btn">
+              <a class="btn" href="">Order Now</a>
+            </div>
+          </div>
+          <img class="absolute -bottom-20 left-0 right-0 mx-auto rounded-full w-[250px] h-[250px] bg-secondary"
+            src="assets/images/food-2.webp" alt="food" />
+          <div
+            class="absolute left-0 right-0 flex flex-row items-center w-[200px] gap-2 p-2 mx-auto bg-white rounded-full bottom-2   justify-center">
+            <div><img src="assets/images/star.webp" alt="start" /></div>
+            <div><img src="assets/images/star.webp" alt="start" /></div>
+            <div><img src="assets/images/star.webp" alt="start" /></div>
+            <div><img src="assets/images/star.webp" alt="start" /></div>
+            <div><img src="assets/images/star.webp" alt="start" /></div>
+            <span class="text-black/50">(5.0)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  start Food List For You -->
+  <section class="mt-[100px] lg:mt-[250px] foodList">
+    <div class="container px-4 mx-auto lg:px-20">
+      <div class="flex flex-col items-center justify-between gap-8 lg:flex-row lg:gap-0">
+        <div>
+          <h1 class="text-2xl font-work_Sans">
+            Food List For You
+          </h1>
+        </div>
+        <div class="flex flex-col gap-4 lg:flex-row">
+          <form method="post"
+            class="lg:max-w-[70%] flex flex-row border-[1px] border-gray-400 rounded-full p-1 w-full items-center">
+            <input class="w-full px-6 text-lg outline-none text-black/50" type="search" placeholder="Search Food " />
+            <button class="px-2 text-center w-[30px] h-[30px] flex justify-center items-center rounded-full bg-primary">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="#fff" stroke-width="2" fill="none"
+                stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </form>
+          <form action="#">
+            <div class="relative w-full">
+              <select for="country" class="input-form peer !bg-[#e6ffe9] text-center cursor-pointer !border-0">
+                <option selected>Filter</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- slider Food List -->
+      <div class="lg:py-16">
+        <div thumbsSlider="food-list2" class="grid grid-cols-2 gap-2 lg:grid-cols-8 swiper food-list lg:gap-0">
+          <div class="overflow-hidden lg:col-span-7 swiper-wrapper">
+            <div class="swiper-slide">
+              <h2 class="text-sm cursor-pointer lg:text-xl font-work_Sans">
+                All
+              </h2>
+            </div>
+            <div class="swiper-slide">
+              <h2 class="text-sm cursor-pointer lg:text-xl font-work_Sans">
+                Pizza
+              </h2>
+            </div>
+            <div class="swiper-slide">
+              <h2 class="text-sm cursor-pointer lg:text-xl font-work_Sans">
+                Asian
+              </h2>
+            </div>
+            <div class="swiper-slide">
+              <h2 class="text-sm cursor-pointer lg:text-xl font-work_Sans">
+                Drink
+              </h2>
+            </div>
+            <div class="swiper-slide">
+              <h2 class="text-sm cursor-pointer lg:text-xl font-work_Sans">
+                Salad
+              </h2>
+            </div>
+            <div class="swiper-slide">
+              <h2 class="text-sm cursor-pointer lg:text-xl font-work_Sans">
+                Burger
+              </h2>
+            </div>
+          </div>
+          <div class="relative flex flex-row items-center justify-end col-span-1 gap-3">
+            <div class="foodList__button--next">
+              <svg fill="#fff" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                clip-rule="evenodd">
+                <path d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z" /></svg>
+            </div>
+            <div class="foodList__button--prev">
+              <svg fill="#fff" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                clip-rule="evenodd">
+                <path d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z" /></svg>
+            </div>
+          </div>
+        </div>
+        <div class="pt-8 swiper food-list2">
+          <div class="swiper-wrapper">
+            <!-- start item -->
+            <div class="py-12 swiper-slide">
+              <div class="foodList-card">
+                <div class="w-full">
+                  <img class="w-full rounded-md lg:w-auto" src="assets/images/food-1.webp" alt="food" />
+                </div>
+                <div class="flex flex-col col-span-2 gap-3">
+                  <h1 class="text-xl font-work_Sans">
+                    Margherita Pizza + Choice of Desserts
+                  </h1>
+                  <p class="text-sm text-black/50">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna
+                  </p>
+                  <div class="grid grid-cols-3 gap-2">
+                    <bdi class="text-xl font-bold text-primary">
+                      $10.99
+                    </bdi>
+                    <div class="flex flex-row gap-0">
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                    </div>
+                    <p class="text-sm text-black/50"> 5201 Reviews</p>
+                  </div>
+                </div>
+                <div class="grid w-full grid-cols-1 place-content-center place-items-center ">
+                  <div
+                    class="bg-primary lg:bg-[#f8fcf8] flex justify-center items-center w-full lg:w-[30px] h-[30px] rounded-md">
+                    <svg class="plus stroke-[#fff] lg:stroke-[#5a9c62]" xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" class="feather feather-plus">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="foodList-card">
+                <div class="w-full">
+                  <img class="w-full rounded-md lg:w-auto" src="assets/images/food-4.webp" alt="food" />
+                </div>
+                <div class="flex flex-col col-span-2 gap-3">
+                  <h1 class="text-xl font-work_Sans">
+                    Margherita Pizza + Choice of Desserts
+                  </h1>
+                  <p class="text-sm text-black/50">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna
+                  </p>
+                  <div class="grid grid-cols-3 gap-2">
+                    <bdi class="text-xl font-bold text-primary">
+                      $10.99
+                    </bdi>
+                    <div class="flex flex-row gap-0">
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                    </div>
+                    <p class="text-sm text-black/50"> 5201 Reviews</p>
+                  </div>
+                </div>
+                <div class="grid w-full grid-cols-1 place-content-center place-items-center ">
+                  <div
+                    class="bg-primary lg:bg-[#f8fcf8] flex justify-center items-center w-full lg:w-[30px] h-[30px] rounded-md">
+                    <svg class="plus stroke-[#fff] lg:stroke-[#5a9c62]" xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" class="feather feather-plus">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="foodList-card">
+                <div class="w-full">
+                  <img class="w-full rounded-md lg:w-auto" src="assets/images/food-2.webp" alt="food" />
+                </div>
+                <div class="flex flex-col col-span-2 gap-3">
+                  <h1 class="text-xl font-work_Sans">
+                    Margherita Pizza + Choice of Desserts
+                  </h1>
+                  <p class="text-sm text-black/50">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna
+                  </p>
+                  <div class="grid grid-cols-3 gap-2">
+                    <bdi class="text-xl font-bold text-primary">
+                      $10.99
+                    </bdi>
+                    <div class="flex flex-row gap-0">
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                    </div>
+                    <p class="text-sm text-black/50"> 5201 Reviews</p>
+                  </div>
+                </div>
+                <div class="grid w-full grid-cols-1 place-content-center place-items-center ">
+                  <div
+                    class="bg-primary lg:bg-[#f8fcf8] flex justify-center items-center w-full lg:w-[30px] h-[30px] rounded-md">
+                    <svg class="plus stroke-[#fff] lg:stroke-[#5a9c62]" xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" class="feather feather-plus">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end item -->
+            <!-- start item -->
+            <div class="py-12 swiper-slide">
+              <div class="foodList-card">
+                <div class="w-full">
+                  <img class="w-full rounded-md lg:w-auto" src="assets/images/food-2.webp" alt="food" />
+                </div>
+                <div class="flex flex-col col-span-2 gap-3">
+                  <h1 class="text-xl font-work_Sans">
+                    Margherita Pizza + Choice of Desserts
+                  </h1>
+                  <p class="text-sm text-black/50">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna
+                  </p>
+                  <div class="grid grid-cols-3 gap-2">
+                    <bdi class="text-xl font-bold text-primary">
+                      $10.99
+                    </bdi>
+                    <div class="flex flex-row gap-0">
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                    </div>
+                    <p class="text-sm text-black/50"> 5201 Reviews</p>
+                  </div>
+                </div>
+                <div class="grid w-full grid-cols-1 place-content-center place-items-center ">
+                  <div
+                    class="bg-primary lg:bg-[#f8fcf8] flex justify-center items-center w-full lg:w-[30px] h-[30px] rounded-md">
+                    <svg class="plus stroke-[#fff] lg:stroke-[#5a9c62]" xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" class="feather feather-plus">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="foodList-card">
+                <div class="w-full">
+                  <img class="w-full rounded-md lg:w-auto" src="assets/images/food-6.webp" alt="food" />
+                </div>
+                <div class="flex flex-col col-span-2 gap-3">
+                  <h1 class="text-xl font-work_Sans">
+                    Margherita Pizza + Choice of Desserts
+                  </h1>
+                  <p class="text-sm text-black/50">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna
+                  </p>
+                  <div class="grid grid-cols-3 gap-2">
+                    <bdi class="text-xl font-bold text-primary">
+                      $10.99
+                    </bdi>
+                    <div class="flex flex-row gap-0">
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                    </div>
+                    <p class="text-sm text-black/50"> 5201 Reviews</p>
+                  </div>
+                </div>
+                <div class="grid w-full grid-cols-1 place-content-center place-items-center ">
+                  <div
+                    class="bg-primary lg:bg-[#f8fcf8] flex justify-center items-center w-full lg:w-[30px] h-[30px] rounded-md">
+                    <svg class="plus stroke-[#fff] lg:stroke-[#5a9c62]" xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" class="feather feather-plus">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end item -->
+            <!-- start item -->
+            <div class="py-12 swiper-slide">
+              <div class="foodList-card">
+                <div class="w-full">
+                  <img class="w-full rounded-md lg:w-auto" src="assets/images/food-3.webp" alt="food" />
+                </div>
+                <div class="flex flex-col col-span-2 gap-3">
+                  <h1 class="text-xl font-work_Sans">
+                    Margherita Pizza + Choice of Desserts
+                  </h1>
+                  <p class="text-sm text-black/50">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna
+                  </p>
+                  <div class="grid grid-cols-3 gap-2">
+                    <bdi class="text-xl font-bold text-primary">
+                      $10.99
+                    </bdi>
+                    <div class="flex flex-row gap-0">
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                    </div>
+                    <p class="text-sm text-black/50"> 5201 Reviews</p>
+                  </div>
+                </div>
+                <div class="grid w-full grid-cols-1 place-content-center place-items-center ">
+                  <div
+                    class="bg-primary lg:bg-[#f8fcf8] flex justify-center items-center w-full lg:w-[30px] h-[30px] rounded-md">
+                    <svg class="plus stroke-[#fff] lg:stroke-[#5a9c62]" xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" class="feather feather-plus">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end item -->
+            <!-- start item -->
+            <div class="py-12 swiper-slide">
+              <div class=" foodList-card">
+                <div class="w-full">
+                  <img class="w-full rounded-md lg:w-auto" src="assets/images/food-4.webp" alt="food" />
+                </div>
+                <div class="flex flex-col col-span-2 gap-3">
+                  <h1 class="text-xl font-work_Sans">
+                    Margherita Pizza + Choice of Desserts
+                  </h1>
+                  <p class="text-sm text-black/50">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna
+                  </p>
+                  <div class="grid grid-cols-3 gap-2">
+                    <bdi class="text-xl font-bold text-primary">
+                      $10.99
+                    </bdi>
+                    <div class="flex flex-row gap-0">
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                    </div>
+                    <p class="text-sm text-black/50"> 5201 Reviews</p>
+                  </div>
+                </div>
+                <div class="grid w-full grid-cols-1 place-content-center place-items-center ">
+                  <div
+                    class="bg-primary lg:bg-[#f8fcf8] flex justify-center items-center w-full lg:w-[30px] h-[30px] rounded-md">
+                    <svg class="plus stroke-[#fff] lg:stroke-[#5a9c62]" xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" class="feather feather-plus">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end item -->
+            <!-- start item -->
+            <div class="py-12 swiper-slide">
+              <div class="foodList-card">
+                <div class="w-full">
+                  <img class="w-full rounded-md lg:w-auto" src="assets/images/food-5.webp" alt="food" />
+                </div>
+                <div class="flex flex-col col-span-2 gap-3">
+                  <h1 class="text-xl font-work_Sans">
+                    Margherita Pizza + Choice of Desserts
+                  </h1>
+                  <p class="text-sm text-black/50">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna
+                  </p>
+                  <div class="grid grid-cols-3 gap-2">
+                    <bdi class="text-xl font-bold text-primary">
+                      $10.99
+                    </bdi>
+                    <div class="flex flex-row gap-0">
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                    </div>
+                    <p class="text-sm text-black/50"> 5201 Reviews</p>
+                  </div>
+                </div>
+                <div class="grid w-full grid-cols-1 place-content-center place-items-center ">
+                  <div
+                    class="bg-primary lg:bg-[#f8fcf8] flex justify-center items-center w-full lg:w-[30px] h-[30px] rounded-md">
+                    <svg class="plus stroke-[#fff] lg:stroke-[#5a9c62]" xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" class="feather feather-plus">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end item -->
+            <!-- start item -->
+            <div class="py-12 swiper-slide">
+              <div class="foodList-card">
+                <div class="w-full">
+                  <img class="w-full rounded-md lg:w-auto" src="assets/images/food-6.webp" alt="food" />
+                </div>
+                <div class="flex flex-col col-span-2 gap-3">
+                  <h1 class="text-xl font-work_Sans">
+                    Margherita Pizza + Choice of Desserts
+                  </h1>
+                  <p class="text-sm text-black/50">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna
+                  </p>
+                  <div class="grid grid-cols-3 gap-2">
+                    <bdi class="text-xl font-bold text-primary">
+                      $10.99
+                    </bdi>
+                    <div class="flex flex-row gap-0">
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                      <img src="assets/images/star.webp" alt="start" />
+                    </div>
+                    <p class="text-sm text-black/50"> 5201 Reviews</p>
+                  </div>
+                </div>
+                <div class="grid w-full grid-cols-1 place-content-center place-items-center ">
+                  <div
+                    class="bg-primary lg:bg-[#f8fcf8] flex justify-center items-center w-full lg:w-[30px] h-[30px] rounded-md">
+                    <svg class="plus stroke-[#fff] lg:stroke-[#5a9c62]" xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" class="feather feather-plus">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end item -->
+          </div>
+        </div>
+      </div>
+      <!-- end Food List -->
+    </div>
+  </section>
+
+  <!-- start Restaurant Testimonial -->
+  <section class="mt-[100px]">
+    <div class="container px-4 mx-auto lg:px-20">
+      <div class="grid grid-cols-1 gap-12 placeholder:lg:gap-4 lg:gap-0 lg:grid-cols-2">
+        <div class="max-h-[400px]  relative  flex justify-center order-1 lg:order-2">
+          <div
+            class="h-[50px] w-[50px] absolute bg-[#febd2e] left-12 -top-6 z-20 rounded-lg flex items-center justify-center lg:left-1/3">
+            <img class="w-[30px] h-[30px]" src="assets/images/quote-left.webp" alt="quote" />
+          </div>
+          <img class="h-full" src="assets/images/wait-serv.webp" alt="coffee" />
+        </div>
+        <div class="relative order-2 p-3 lg:p-12 lg:order-1">
+          <h1 class="pb-8 text-xl lg:text-4xl font-work_Sans">Restaurant Testimonial</h1>
+          <p class="pb-6 text-sm text-black/50 ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.</p>
+          <div class="pt-6">
+            <div class="relative flex flex-col gap-4 p-2 bg-white rounded-lg drop-shadow-lg customers-card">
+              <div class=" -top-8 w-[60px] h-[60px] rounded-full absolute overflow-hidden left-4">
+                <img src="assets/images/user.webp" alt="user" />
+              </div>
+              <p class="mt-6 text-sm text-black/50">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.
+              </p>
+              <div class="flex flex-row gap-2">
+                <div>
+                  <h1 class="text-xl">Abobaker Hilal</h1>
+                </div>
+                <div class="flex flex-row items-center w-auto gap-2">
+                  <div><img src="assets/images/star.webp" alt="start" /></div>
+                  <div><img src="assets/images/star.webp" alt="start" /></div>
+                  <div><img src="assets/images/star.webp" alt="start" /></div>
+                  <div><img src="assets/images/star.webp" alt="start" /></div>
+                  <div><img src="assets/images/star.webp" alt="start" /></div>
+                  <span class="text-black/50">(5.0)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- start Footer -->
+  <footer class="mt-[100px] lg:mt-[250px] pb-4">
+    <div class="container px-4 mx-auto lg:px-20">
+      <div class="relative">
+        <a href="index.html" class="block"><img src="assets/images/Logo.webp" alt="logo" /></a>
+        <img class="absolute right-0 -top-20" src="assets/images/ward.webp" alt="work" />
+      </div>
+      <div class="grid grid-cols-2 gap-8 py-12 lg:gap-4 lg:grid-cols-4">
+        <div>
+          <h1 class="text-xl capitalize">
+            Why us?
+          </h1>
+          <ul class="flex flex-col gap-3 pt-6">
+            <li><a href="#" class="nav-link">Responsive</a></li>
+            <li><a href="#" class="nav-link">Engagement</a></li>
+            <li><a href="#" class="nav-link">Scale</a></li>
+            <li><a href="#" class="nav-link">Watch the Demo</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="text-xl capitalize">
+            Resources
+          </h1>
+          <ul class="flex flex-col gap-3 pt-6">
+            <li><a href="#" class="nav-link">Developers</a></li>
+            <li><a href="#" class="nav-link">Apps</a></li>
+            <li><a href="#" class="nav-link">Blog</a></li>
+            <li><a href="#" class="nav-link">Help Center</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="text-xl capitalize">
+            Company
+          </h1>
+          <ul class="flex flex-col gap-3 pt-6">
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Merchant</a></li>
+            <li><a href="#" class="nav-link">Career</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="text-xl capitalize">
+            Our Social Media
+          </h1>
+          <div class="flex flex-col gap-4 pt-4">
+            <div class="flex flex-row gap-4">
+              <div class="w-[20px] h-[20px] rounded-md bg-primary p-1">
+                <img src="assets/images/facebook.webp" alt="face" />
+              </div>
+              <div class="w-[20px] h-[20px] rounded-md bg-primary p-1">
+                <img src="assets/images/instagram.webp" alt="face" />
+              </div>
+              <div class="w-[20px] h-[20px] rounded-md bg-primary p-1">
+                <img src="assets/images/twitter.webp" alt="face" />
+              </div>
+            </div>
+            <div>
+              <h class="text-xl font-work_Sans">
+                Download App
+              </h>
+              <div class="flex flex-row gap-2 pt-4">
+                <a href="#" class="block">
+                  <img src="assets/images/google-play-bad.webp" alt="download app from google play" />
+                </a>
+                <a href="#" class="block">
+                  <img src="assets/images/app-store-badge.webp" alt="download app from app store " />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="flex flex-col justify-between gap-4 py-6 lg:gap-0 lg:flex-row">
+        <div class="order-2 lg:order-1">
+          <p class="text-black/50"> Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script> FoodRoad Food delivery </p>
+        </div>
+        <div class="order-1 lg:order-2">
+          <ul class="flex flex-row gap-4">
+            <li><a href="#" class="!text-sm nav-link">Privacy Policy</a></li>
+            <li><a href="#" class="!text-sm nav-link">Cookie Policy</a></li>
+            <li><a href="#" class="!text-sm nav-link">Term & Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <!-- loader -->
+ <div class="loader">
+   <h1 class="text-xl text-white lg:text-4xl">
+     loading...
+   </h1>
+ </div>
+  <!-- js lib -->
+  <script src="js/libs/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
