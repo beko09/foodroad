@@ -2,6 +2,9 @@ window.onload = function () {
   const load = document.querySelector('.loader');
   load.classList.add('end-load');
 }
+
+
+
 const selectElement = (element) => document.querySelector(element);
 
 const openNav = selectElement(".open-nav");
@@ -114,3 +117,6 @@ accordionHeader.forEach((header) => {
     }
   });
 });
+
+
+AOS.init();

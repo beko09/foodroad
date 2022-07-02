@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Food Road</title>
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -79,7 +80,7 @@
   <!-- start hero -->
   <section class="mt-[100px] lg:mt-[150px] hero">
     <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-0">
-      <div class="px-4">
+      <div class="px-4" >
         <div class="flex flex-col gap-10 lg:px-20 hero-content">
           <h1 class="text-7xl font-work_Sans">
             Order Your Food & Enjoy The Taste
@@ -101,9 +102,9 @@
         </div>
       </div>
       <div>
-        <div class="hero-img">
+        <div class="hero-img" >
           <img class="h-[inherit] w-full" src="assets/images/hero.webp" alt="hero" />
-          <div class="order-done">
+          <div class="order-done" data-aos="fade-down" data-aos-duration="3000" data-aos-easing="ease-in-sine">
             <img src="assets/images/check.webp" alt="order-done" />
             <h6>Order Complete</h6>
           </div>
@@ -132,8 +133,8 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 ">
         <div class="relative w-full p-4 bg-secondary">
           <div class="relative flex flex-row justify-center w-full gap-4 px-4 lg:left-0 lg:px-0 lg:absolute -top-24">
-            <img class="w-1/2 lg:w-auto" src="assets/images/phone1.webp" alt="">
-            <img class="w-1/2 lg:w-auto" src="assets/images/phone2.webp" alt="">
+            <img data-aos="fade-left"   data-aos-duration="1500" class="w-1/2 lg:w-auto" src="assets/images/phone1.webp" alt="">
+            <img  data-aos-delay="300" data-aos="fade-right"   data-aos-duration="1500" class="w-1/2 lg:w-auto" src="assets/images/phone2.webp" alt="">
           </div>
         </div>
         <div class="p-4 rounded-tr-lg rounded-br-lg bg-secondary">
@@ -168,8 +169,9 @@
       </div>
     </div>
     <div class="container px-4 mx-auto lg:px-20">
-      <div class="grid grid-cols-1 gap-16 lg:grid-cols-3">
-        <div class="flex flex-col items-center justify-center gap-4">
+      <div class="relative grid grid-cols-1 gap-16 overflow-hidden lg:grid-cols-3">
+        <div  data-aos-easing="linear"
+     data-aos-duration="1500" data-aos="fade-right" class="flex flex-col items-center justify-center gap-4">
           <img class="w-full max-w-[150px]" src="assets/images/feat-1.webp" alt="feature" />
           <h2 class="text-2xl font-bold font-work_Sans">
             The Best Courier
@@ -178,7 +180,8 @@
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
           </p>
         </div>
-        <div class="flex flex-col items-center justify-center gap-4">
+        <div  data-aos-easing="linear"
+     data-aos-duration="1500" data-aos="fade-up" class="flex flex-col items-center justify-center gap-4">
           <img class="w-full max-w-[150px]" src="assets/images/feat-2.webp" alt="feature" />
           <h2 class="text-2xl font-bold font-work_Sans">
             Easy to Use
@@ -187,7 +190,8 @@
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
           </p>
         </div>
-        <div class="flex flex-col items-center justify-center gap-4">
+        <div  data-aos-easing="linear"
+     data-aos-duration="1500" data-aos="fade-left" class="flex flex-col items-center justify-center gap-4">
           <img class="w-full max-w-[150px]" src="assets/images/feat-3.webp" alt="feature" />
           <h2 class="text-2xl font-bold font-work_Sans">
             24/7 Support
@@ -972,6 +976,7 @@
  </div>
   <!-- js lib -->
   <script src="js/libs/swiper-bundle.min.js"></script>
+  <script src="js/libs/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 
