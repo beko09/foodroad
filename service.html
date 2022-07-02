@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <!-- start header -->
+ <!-- start header -->
   <header class="header !bg-secondary [&>*]:bg-secondary">
     <div>
       <a href="index.html"><img src="assets/images/Logo.webp" alt="Food" /></a>
@@ -24,8 +24,8 @@
         <li><a class="nav-link" href="index.html">Home</a></li>
         <li><a class="nav-link" href="about.html">About</a></li>
         <li><a class="nav-link" href="restaurant.html">Restaurant</a></li>
-        <li class="relative [&:hover>ul]:block lg:[&:hover>ul]:opacity-100">
-          <div class="flex flex-row items-center">
+        <li class="relative drop-link">
+          <div class="flex flex-row items-center ">
             <a class="nav-link " type="button" data-dropdown-toggle="dropdown" href="#">
               Pages
             </a>
@@ -50,7 +50,7 @@
             </li>
           </ul>
         </li>
-        <li><a class="nav-link" href="service.html">Service</a></li>
+        <li><a class="nav-link active" href="service.html">Service</a></li>
         <li><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
       <div class="py-8 main-btn lg:hidden">
@@ -251,7 +251,7 @@
         <div class="relative order-1 p-4 lg:p-12 lg:order-2">
           <h1 class="pb-8 text-5xl font-work_Sans">Wait a Minute For Delicious</h1>
           <div class="pt-6">
-            <div class="relative flex flex-col gap-4 p-2 bg-white rounded-lg shadow-lg customers-card">
+            <div class="relative flex flex-col gap-4 p-2 bg-white rounded-lg drop-shadow-lg customers-card">
               <div class=" -top-8 w-[60px] h-[60px] rounded-full absolute overflow-hidden left-4">
                 <img src="assets/images/user.webp" alt="user" />
               </div>
@@ -490,6 +490,13 @@
       </div>
     </div>
   </footer>
+
+    <!-- loader -->
+ <div class="loader">
+   <h1 class="text-xl text-white lg:text-4xl">
+     loading...
+   </h1>
+ </div>
   <!-- js lib -->
   <script src="js/libs/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>

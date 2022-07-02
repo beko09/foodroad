@@ -1,3 +1,7 @@
+window.onload = function () {
+  const load = document.querySelector('.loader');
+  load.classList.add('end-load');
+}
 const selectElement = (element) => document.querySelector(element);
 
 const openNav = selectElement(".open-nav");
@@ -63,6 +67,31 @@ var customersSay = new Swiper(".customers-say", {
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
+  },
+});
+
+
+var foodList = new Swiper(".food-list", {
+  lazy: true,
+  loop: false,
+  grabCursor: true,
+  spaceBetween: 0,
+  slidesPerView: 6,
+  freeMode: true,
+  watchSlidesProgress: false,
+
+});
+var foodList2 = new Swiper(".food-list2", {
+  lazy: true,
+  grabCursor: true,
+  navigation: {
+    nextEl: ".foodList__button--next",
+    prevEl: ".foodList__button--prev",
+  },
+  loop: true,
+  spaceBetween: 10,
+  thumbs: {
+    swiper: foodList,
   },
 });
 

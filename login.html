@@ -11,8 +11,8 @@
 </head>
 
 <body>
-  <div class="relative top-0 grid h-screen grid-cols-1 gap-4 md:grid-cols-2 md:gap-0 place-content-center login">
-    <div class="flex flex-col items-center justify-center gap-3 px-4 pt-6 md:px-24">
+  <div class="login">
+    <div class="flex flex-col items-center justify-center gap-4 px-4 pt-6 lg:pt-0 lg:px-24">
       <div class="flex flex-col items-center justify-center gap-2">
         <div class="">
           <a href="index.html">
@@ -53,10 +53,16 @@
         <p>You don't have an account ? <a class="text-[#f0bb62]" href="register.html">Register</a></p>
       </div>
     </div>
-    <div class="relative hidden h-screen lg:block">
-      <img class="w-full h-[inherit]" src="assets/images/login-bg.webp" alt="login" />
+    <div class="relative hidden w-full h-screen lg:block">
+      <img class="inline-block w-full h-full" src="assets/images/login-bg.webp" alt="login" />
     </div>
   </div>
+    <!-- loader -->
+ <div class="loader">
+   <h1 class="text-xl text-white lg:text-4xl">
+     loading...
+   </h1>
+ </div>
   <!-- js lib -->
   <script src="js/libs/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>

@@ -11,16 +11,16 @@
 </head>
 
 <body>
-  <div class="relative top-0 grid h-screen grid-cols-1 gap-4 md:grid-cols-2 md:gap-0 place-content-center login">
-    <div class="flex flex-col items-center justify-center gap-3 px-4 pt-4 ">
+  <div class="login place-items-center">
+    <div class="flex flex-col items-center justify-center gap-3 px-4 pt-[300px] lg:pt-0">
       <div class="flex flex-col items-center justify-center gap-2">
-        <div class="">
+        <div class="pt-2">
           <a href="index.html">
             <img src="assets/images/Logo.webp" alt="logo" />
           </a>
         </div>
         <h1 class="text-4xl font-work_Sans text-[#febd2e]">Register</h1>
-        <p class="text-lg text-black/50">Just sign in if you have an account in here. Enjoy our Website</p>
+        <p class="text-lg text-center text-black/50">Just sign in if you have an account in here. Enjoy our Website</p>
       </div>
       <form action="#" method="post"
         class="flex flex-col w-full max-w-full gap-6 px-4 py-8 bg-white rounded-lg shadow-md lg:px-10">
@@ -85,15 +85,21 @@
         <div class="flex flex-col items-center gap-4 lg:flex-row">
 
           <a href="login.html"
-            class="block py-2 px-8  !text-[#696974] !bg-[#f1f1f5] rounded-full shadow-lg capitalize">login </a>
-          <button class="block w-full px-8 py-2 text-white rounded-full shadow-lg bg-primary">Get Started </button>
+            class="block py-2 px-8  !text-[#696974] !bg-[#f1f1f5] rounded-full shadow-lg capitalize order-2 lg:order-1 w-full text-center">login </a>
+          <button class="order-1 block w-full px-8 py-2 text-white rounded-full shadow-lg lg:order-2 bg-primary">Get Started </button>
         </div>
       </form>
     </div>
-    <div class="relative hidden h-screen lg:block">
+    <div class="relative hidden w-full h-screen lg:block">
       <img class="w-full h-[inherit]" src="assets/images/register-bg.webp" alt="login" />
     </div>
   </div>
+    <!-- loader -->
+ <div class="loader">
+   <h1 class="text-xl text-white lg:text-4xl">
+     loading...
+   </h1>
+ </div>
   <!-- js lib -->
   <script src="js/libs/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
