@@ -1504,6 +1504,11 @@ video {
   color: rgb(81 146 89 / var(--tw-text-opacity));
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .text-green-500 {
   --tw-text-opacity: 1;
   color: rgb(34 197 94 / var(--tw-text-opacity));
@@ -1512,11 +1517,6 @@ video {
 .text-\[\#FEBD2E\] {
   --tw-text-opacity: 1;
   color: rgb(254 189 46 / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-\[\#febd2e\] {
@@ -1660,7 +1660,7 @@ video {
 }
 
 .nav-link {
-  font-family: open-sans, sans-serif;
+  font-family: work_Sans, sans-serif;
   font-size: 1.125rem;
   line-height: 1.75rem;
   text-transform: capitalize;

@@ -175,7 +175,7 @@ Food Road
   * :green_circle: responsive
 * :white_check_mark: become-merchant.html
   * :green_circle: responsive
-* :twisted_rightwards_arrows: Now Iam work on animation in all page
+* :white_check_mark:  animation in some page
 
 See :eyes: the [open issues](https://github.com/beko09/foodroad/issues) for a full list of proposed features (and known issues).
 <br/>
