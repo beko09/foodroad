@@ -21,7 +21,7 @@ html {
 }
 
 .nav-link {
-  @apply  text-black/60 hover:text-black font-open-sans text-lg capitalize
+  @apply  text-black/60 hover:text-black font-work_Sans text-lg capitalize
 }
 
 .nav-link.active {
