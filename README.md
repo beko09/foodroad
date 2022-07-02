@@ -1,3 +1,4 @@
+
 <div id="top"></div>
 
 <div align="center" id="about">
@@ -11,13 +12,11 @@
 
   <p align="center" style="line-height:30px; letter-spacing:1px;">
     This project was designed by the <strong>designer</strong> <a href="https://www.behance.net/gallery/141171487/Food-Road-Web-Mobile-Freebie-UI-UX-Design?fbclid=IwAR0hZZvJ-UGangQPsFMozIi6LWQibGAQJ-oTX0kWQp0j1Gt1dei-p2SCyVs">
-    Muhammad Mustafa 
+    Muhammad Mustafa
     </a>
     Ali It is a food ordering website and I decided to code this design By tailwindcss and experience all its features and enjoy coding in my spare time
   </p>
 </div>
-
-
 
  <img  src="public/assets/images/previewfoodroad.png" alt="Logo" />
 
@@ -77,7 +76,6 @@ To run the project locally on your device You need to :arrow_down:
 
 ## Prerequisites
 
-
 Must download Npm.
 
 * npm
@@ -89,7 +87,6 @@ Must download Npm.
 ## Installation
 
 Let's install the project locally and run it :running_man:.
-
 
 1. First Clone the repo
 
@@ -108,6 +105,7 @@ Let's install the project locally and run it :running_man:.
    ```sh
     npm run dev
     ```
+
 4. Open any page and enjoy :smile:
 
 <br/>
@@ -118,7 +116,6 @@ Let's install the project locally and run it :running_man:.
 <br/>
 
 ## :open_file_folder: <h1  id="arch">Project Architecting Files </h1>
-
 
 ```css
 Food Road
@@ -157,29 +154,28 @@ Food Road
 ## Roadmap
 
 * :white_check_mark: index.html
-    * :red_circle:  animations
-    * :green_circle:  responsive
+  * :green_circle:  responsive
 * :white_check_mark: about.html
-    * :red_circle:  animations
-    * :green_circle:  responsive
+  * :green_circle:  responsive
 * :white_check_mark: service.html
-    * :red_circle:  animations
-    * :green_circle: responsive
+  * :green_circle: responsive
 * :white_check_mark: login.html
-    * :red_circle:  animations
-    * :green_circle: responsive
-* ℹ️ register.html
-    * :red_circle:  animations
-    * :red_circle:  not complite
-    * :green_circle: responsive
-* :x: Contact.html
-  * :x:  animations
-  * :x: responsive
-* :x: Restaurant.html
-  * :x:  animations
-  * :x: responsive
-* :twisted_rightwards_arrows: Other pages to work on
-
+  * :green_circle: responsive
+* :white_check_mark: register.html
+  * :green_circle: responsive
+* :white_check_mark: Contact.html
+  * :green_circle: responsive
+* :white_check_mark: Restaurant.html
+  * :green_circle: responsive
+* :white_check_mark: single-restaurant.html
+  * :green_circle: responsive
+* :white_check_mark: our-team.html
+  * :green_circle: responsive
+* :white_check_mark: faq.html
+  * :green_circle: responsive
+* :white_check_mark: become-merchant.html
+  * :green_circle: responsive
+* :twisted_rightwards_arrows: Now Iam work on animation in all page
 
 See :eyes: the [open issues](https://github.com/beko09/foodroad/issues) for a full list of proposed features (and known issues).
 <br/>
@@ -198,30 +194,34 @@ Don't forget to give the project a star! Thanks again!
 <br/>
 <br/>
 1. Fork the Project
-2. Create your Feature Branch 
+2. Create your Feature Branch
 
 ```bash
     git checkout -b feature/AmazingFeature
 ```
-3. Commit your Changes 
+
+3. Commit your Changes
+
 ```bash
     git commit -m 'Add some AmazingFeature'
 ```
-4. Push to the Branch 
+
+4. Push to the Branch
+
 ```bash
     git push origin feature/AmazingFeature
 ```
-5. Open a Pull Request
 
+5. Open a Pull Request
 
 [:arrow_up: Back to top](#top)
 
-
-
 # Contact
+
+Abobaker hilal - [@facebook](https://www.facebook.com/abobakerhilal/)
 
 Abobaker hilal - [@linkedin](https://www.linkedin.com/in/abobakerhilal/)
 
 Blog: [d-s](https://www.d-s.sd)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+[:arrow_up: Back to top](#top)
